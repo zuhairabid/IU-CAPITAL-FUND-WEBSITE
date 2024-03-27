@@ -1,0 +1,7 @@
+.widget__background {
+    background-color: #ddd;
+    position: absolute;
+    height: 44px;
+    width: 100%;
+    z-index: -1;
+}
