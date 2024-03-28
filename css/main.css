@@ -52,8 +52,20 @@ button{
     background-color: #d4d4d4;
     font-size: 18px;
     font-weight: 600;
-    color: black;
+    background-color: #373635;
     cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+}
+.button2{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #d4d4d4;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #bc7229;
+    cursor: pointer;
+    color: white;
     transition: all 0.3s ease;
 }
 
