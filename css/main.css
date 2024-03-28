@@ -1,6 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+
+
+:root{
+    --slider-height: 80vh;
+}
+
+
+
+
+
 *{
 
+
+font-family: "Lato", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+.container{
+
+
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.button1{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #d4d4d4;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
