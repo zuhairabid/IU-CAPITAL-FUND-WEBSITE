@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME | IU CAPITAL</title>
     <link rel="icon" type="image/png" href="assets/IU CAPITAL FAVICON.png" />
-    <link rel="stylesheet" href="css/trading-view-ticker.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/slider.css" />
-    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/utils/trading-view-ticker.css" />
+    <link rel="stylesheet" href="css/global/main.css" />
+    <link rel="stylesheet" href="css/global/menu.css" />
+    <link rel="stylesheet" href="css/home/services.css" />
+    <link rel="stylesheet" href="css/home/hero.css" />
+    <link rel="stylesheet" href="css/home/results-section.css" />
+    <link rel="stylesheet" href="css/home/about.css" />
+    <link rel="stylesheet" href="css/home/contact-us.css" />
+    <link rel="stylesheet" href="css/home/testimonial.css" />
+    <link rel="stylesheet" href="css/home/our-team.css" />
+
     <!-- slider -->
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
@@ -20,30 +26,28 @@
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
+    /> -->
     <!-- slider -->
   </head>
   <body>
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-      <div class="tradingview-widget-container__widget"></div>
-      <script
-        type="text/javascript"
-        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-        async
-      >
-         
-      </script>
+    <!-- loaderr -->
+    <div class="loader">
+      <img src="assets/loader/loader.gif" alt="Loading..." />
     </div>
-    <!-- TradingView Widget END -->
+    <!-- loaderr -->
     <!-- NAVBAR -->
 
     <menu>
       <div class="container">
-        <div class="logo"><img src="assets/header logo.png" alt="" /></div>
+        <div class="logo">
+          <img src="assets/IU CAPITAL LOGO.png" alt="" />
+          <p class="logo_text">IU CAPITAL</p>
+        </div>
         <nav>
-          <a href="#top">Home</a>
+          <a href="/">Home</a>
           <a href="#services">Services</a>
+          <a href="#education">Education</a>
+          <a href="/economic-calendar.html">Economic Calender</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -53,116 +57,369 @@
       </div>
     </menu>
     <!-- NAVBAR -->
-    <!-- SLIDER -->
-    <!-- EACH DIV ITEM HAVING A CLASS OF SLIDER ITEM AND SLIDER CONTAINER -->
-    <div class="slider">
-      <!-- slider item -->
-      <div class="slider_item">
-        <img src="/assets/slides/slider1.png" alt="Image 1" />
-
-        <div class="slider-content">
-          <div class="left">
-            <h1>IU CAPITAL</h1>
-            <p>Where Trading Meets Excellency</p>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero_photo">
+          <img src="assets/hero-section/hero.png" alt="" />
+        </div>
+        <div class="hero_content">
+          <div>
+            <div class="title_span">
+              <span></span>
+              <p>TRADING CONSULTANT</p>
+            </div>
+            <p class="hero_content_main">TAKE YOUR TRADING TO THE NEXT LEVEL</p>
           </div>
-          <div class="right">
-            <p>
-              We are a Private Equity Firm. Specialized in trading with the most
-              advanced technologies.<br />
-              <br />
-              We offer Consultation, Advanced Trading Signals, Books and Courses
-              allowing traders to make their trading easy and analytical.<br />
-              <br />
-              Take your Trading Journey to the next level with us.
-            </p>
-            <button class="button2">Get Started</button>
+          <p class="hero_content_sub">
+            Connect with IU CAPITAL, a team of experienced trading experts who
+            understand the ins and outs of the market. Created by traders, for
+            traders, our goal is to provide personalized assistance that meets
+            your unique trading requirements.
+          </p>
+
+          <div class="hero_content_signature">
+            <div class="hero_content_signature_image_container">
+              <img src="assets/hero-section/MIKE SIGNATURE.png" alt="" />
+            </div>
+            <div class="hero_content_signature_name">
+              <p>Mike Emmons</p>
+              <p>Founder of IU CAPITAL</p>
+            </div>
+          </div>
+          <div class="hero_content_buttons">
+            <button class="button1">Get Started</button
+            ><button class="button2">Get Started</button>
           </div>
         </div>
       </div>
-      <!-- slider item -->
-      <!-- slider item -->
-      <div class="slider_item">
-        <img src="/assets/slides/slider2.png" alt="Image 1" />
-
-        <div class="slider-content">
-          <div class="left">
-            <h1>Trading Signals</h1>
-            <p>Get Trading Signals From Our Most Advanced Trading Bots.</p>
-          </div>
-          <div class="right">
-            <p>
-              With our expertise in Trading Analysis. We have made Trading bots
-              that uses Highly Profitable Trading Strategies assisted with AI.
-              <br /><br />
-              provide Free, Premium and Pro Signal Channels.
-            </p>
-            <button class="button2">Get Started</button>
-          </div>
-        </div>
-      </div>
-      <!-- slider item -->
-      <!-- slider item -->
-      <div class="slider_item">
-        <img src="/assets/slides/slider3.png" alt="Image 1" />
-
-        <div class="slider-content">
-          <div class="left">
-            <h1>Trading Signals</h1>
-            <p>No matter your trading performance, we got you</p>
-          </div>
-          <div class="right">
-            <p>
-              Get Hands on One to One Trading Advice from the most experienced
-              Traders from IU CAPITAL.
-              <br /><br /><br />
-              We discuss and provide great solution bla bla bla bla bla blabla
-              bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
-            </p>
-            <button class="button2">Get Started</button>
-          </div>
-        </div>
-      </div>
-      <!-- slider item -->
+      <!-- <img class="bg-hero" src="assets/hero-bg.png" alt=""> -->
+    </section>
+    <!-- HERO SECTION -->
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async
+      >
+          {
+          "symbols": [
+            {
+              "proName": "FOREXCOM:SPXUSD",
+              "title": "S&P 500 Index"
+            },
+            {
+              "proName": "FOREXCOM:NSXUSD",
+              "title": "US 100 Cash CFD"
+            },
+            {
+              "proName": "FX_IDC:EURUSD",
+              "title": "EUR to USD"
+            },
+            {
+              "proName": "BITSTAMP:BTCUSD",
+              "title": "Bitcoin"
+            },
+            {
+              "proName": "BITSTAMP:ETHUSD",
+              "title": "Ethereum"
+            }
+          ],
+          "showSymbolLogo": true,
+          "isTransparent": true,
+          "displayMode": "regular",
+          "colorTheme": "light",
+          "locale": "en"
+        }
+      </script>
     </div>
+    <!-- TradingView Widget END -->
 
-    <!-- SLIDER -->
+    <!-- RESULTS -->
+    <div class="results container">
+      <p class="results_title">HIGH IMPACT RESULTS</p>
+      <div class="results_container">
+        <div class="results_container_item">
+          <p>300</p>
+          <p>+</p>
+          <p>consultations completed</p>
+        </div>
+        <div class="results_container_item">
+          <p>4000</p>
+          <p>+</p>
+          <p>signals subscribers</p>
+        </div>
+        <div class="results_container_item">
+          <p>1.7M</p>
+          <p>+</p>
+          <p>revenue generated privately</p>
+        </div>
+      </div>
+    </div>
+    <!-- RESULTS -->
+    <!-- ABOUT US -->
+    <div class="about container">
+      <div class="about_content">
+        <div>
+          <div class="title_span">
+            <span></span>
+            <p>ABOUT US</p>
+          </div>
+          <p class="about_title">
+            We are IU CAPITAL, the only place where you will find everything you
+            need to take your trading to the next level
+          </p>
+        </div>
+        <p class="about_sub">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet sit
+          tristique vel egestas urna. Lectus pharetra, donec viverra sit augue
+          erat nunc, scelerisque . Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Temporibus eos, animi hic exercitationem accusamus
+          possimus distinctio! Nisi voluptate exercitationem expedita
+          voluptatibus blanditiis, at earum nobis dignissimos recusandae,
+          officiis id voluptates.
+        </p>
+        <button class="button3">MORE ABOUT US</button>
+      </div>
+      <div class="about_photo">
+        <div class="about_photo_box"></div>
+        <img
+          class="about_graphics"
+          src="assets/about-section/about-graphics.svg"
+          alt=""
+        />
+        <img
+          class="about_office"
+          src="assets/about-section/office.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- ABOUT US -->
     <!-- SERVICES -->
     <section class="services">
-      `
-      <h1>SERVICES</h1>
-      <div class="service_cards_container">
-        <div class="service_card_vertical">
-          <div class="services_logo">
-            <img src="assets/services-icons/consultation.png " alt="" />
+      <div class="container">
+        <p class="title">OUR SERVICES</p>
+        <p class="subtitle">Services for growing your trading performance</p>
+        <div class="services_container">
+          <!-- item -->
+          <div class="services_container_item">
+            <img src="assets/service-section/services-consult.png" alt="" />
+            <p class="services_container_item_title">TRADING CONSULTATION</p>
+            <p class="services_container_item_content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Temporibus praesentium ullam a libero sit! Sequi, quidem ea? Aut
+              reiciendis dolor, obcaecati quo libero, similique omnis, officiis
+              eius quis soluta fugit!
+            </p>
+            <button class="button3">Learn More</button>
           </div>
-          <h3>Consultation</h3>
-          <p>
-            COnsultation from IU CAPITAL. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Soluta quam veniam quos nemo facilis
-            voluptates, blanditiis eaque rerum modi fugit.
-          </p>
-          <button class="button2">Get Started</button>
-        </div>
-        <div class="service_card_vertical">
-          <div class="services_logo">
-            <img src="assets/services-icons/signals.png " alt="" />
+          <!-- item -->
+          <!-- item -->
+          <div class="services_container_item">
+            <img src="assets/service-section/service-growth.png" alt="" />
+            <p class="services_container_item_title">ADVANCED BOT SIGNALS</p>
+            <p class="services_container_item_content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Temporibus praesentium ullam a libero sit! Sequi, quidem ea? Aut
+              reiciendis dolor, obcaecati quo libero, similique omnis, officiis
+              eius quis soluta fugit!
+            </p>
+            <button class="button3">Learn More</button>
           </div>
-          <h3>Trading Signals</h3>
-          <p>
-            Get Trading Signals From Our Most Advanced Trading Bots. Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Soluta quam veniam
-            quos nemo facilis voluptates, blanditiis eaque rerum modi fugit.
-          </p>
-          <button class="button1">Get Started</button>
+          <!-- item -->
+          <!-- item -->
+          <div class="services_container_item">
+            <img src="assets/service-section/service-bussiness.png" alt="" />
+            <p class="services_container_item_title">BUSSINESS EDUCATION</p>
+            <p class="services_container_item_content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Temporibus praesentium ullam a libero sit! Sequi, quidem ea? Aut
+              reiciendis dolor, obcaecati quo libero, similique omnis, officiis
+              eius quis soluta fugit!
+            </p>
+            <button class="button3">Learn More</button>
+          </div>
+          <!-- item -->
         </div>
+        <button class="button2">All Services</button>
       </div>
     </section>
     <!-- SERVICES -->
+    <!-- CONTACT US -->
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact_content">
+          <img
+            src="assets/contact-us-section/contact-bg.webp"
+            alt=""
+            class="contact_bg_image"
+          />
+          <p class="contact_title">GET IN TOUCH</p>
+          <p class="contact_sub">
+            Schedule a session and skyrocket your business today
+          </p>
+          <p class="contact_content_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi
+            cumque odio dolorem atque iure facere omnis sunt nemo aliquam ex
+            perspiciatis, voluptas reprehenderit, ullam corporis. Eos, ipsa ab.
+            Reprehenderit?
+          </p>
+          <button class="button1">CONTACT US</button>
+        </div>
+        <div class="contact_box"></div>
+      </div>
+    </section>
+    <!-- CONTACT US -->
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonial">
+      <div class="container">
+        <p class="testimonial_title">TESTIMONIALS</p>
+        <p class="testimonial_sub">Results that speak for themselves</p>
+        <div class="tetsimonial_container">
+          <div class="testimonial_item">
+            <div class="testimonial_item_header">
+              <img src="assets/service-section/services-consult.png" alt="" />
+              <p>TRADING CONSULTATION</p>
+            </div>
+            <div class="testimonial_content_text">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                maiores porro eos earum veniam quod possimus nobis ex nihil,
+                fuga accusantium libero atque numquam dolorum ducimus cumque
+                placeat quia. Earum?
+              </p>
+            </div>
+            <div class="testimonial_person">
+              <div class="testimonial_person_photo">
+                <img src="assets/testimonial/testimonial1.jpg" alt="" />
+              </div>
+              <div class="testimonial_person_identity">
+                <p class="name">Drew McClure</p>
+                <p class="work">MANAGER @ WECARE</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial_item">
+            <div class="testimonial_item_header">
+              <img src="assets/service-section/service-growth.png" alt="" />
+              <p>SIGNAL TRADING</p>
+            </div>
+            <div class="testimonial_content_text">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                maiores porro eos earum veniam quod possimus nobis ex nihil,
+                fuga accusantium libero atque numquam dolorum ducimus cumque
+                placeat quia. Earum?
+              </p>
+            </div>
+            <div class="testimonial_person">
+              <div class="testimonial_person_photo">
+                <img src="assets/testimonial/testimonial2.jpg" alt="" />
+              </div>
+              <div class="testimonial_person_identity">
+                <p class="name">Drew McClure</p>
+                <p class="work">MANAGER @ WECARE</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial_item">
+            <div class="testimonial_item_header">
+              <img src="assets/service-section/service-bussiness.png" alt="" />
+              <p>RISK MANAGEMENT</p>
+            </div>
+            <div class="testimonial_content_text">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                maiores porro eos earum veniam quod possimus nobis ex nihil,
+                fuga accusantium libero atque numquam dolorum ducimus cumque
+                placeat quia. Earum?
+              </p>
+            </div>
+            <div class="testimonial_person">
+              <div class="testimonial_person_photo">
+                <img src="assets/testimonial/testimonial3.jpg" alt="" />
+              </div>
+              <div class="testimonial_person_identity">
+                <p class="name">Drew McClure</p>
+                <p class="work">MANAGER @ WECARE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="button2">CONTACT US</button>
+      </div>
+    </section>
+    <!-- TESTIMONIALS -->
+    <!-- OUR TEAM -->
+    <section class="our_team">
+      <div class="container">
+        <p class="our_team_title">OUR TEAM</p>
+        <p class="our_team_sub">Meet the team behind IU CAPITAL</p>
+        <div class="our_team_items">
+          <div class="our_team_item">
+            <img src="/assets/our-team/mike.jpg" alt="" />
+            <div class="our_team_item_identity">
+              <p class="name">MIKE EMMON</p>
+              <p class="work">FOUNDER AND CEO</p>
+            </div>
+          </div>
+          <div class="our_team_item">
+            <img src="/assets/our-team/simon.jpg" alt="" />
+            <div class="our_team_item_identity">
+              <p class="name">SIMON HUBER</p>
+              <p class="work">I AM BUSY TODAY</p>
+            </div>
+          </div>
+          <div class="our_team_item">
+            <img src="/assets/our-team/adam.jpg" alt="" />
+            <div class="our_team_item_identity">
+              <p class="name">Adam Szafrański</p>
+              <p class="work">ONE LAST THING</p>
+            </div>
+          </div>
+          <div class="our_team_item">
+            <img src="/assets/our-team/zuhair.jpeg" alt="" />
+            <div class="our_team_item_identity">
+              <p class="name">ZUHAIR ABID</p>
+              <p class="work">. . . . . .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our_team_box"></div>
+    </section>
+    <!-- OUR TEAM -->
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div class="container">
+        <p class="newsletter_title">NEWSLETTER</p>
+        <p class="newsletter_subtitle">
+          Subscribe to our newsletter to get our latest news
+        </p>
+        <div class="newsletter_form">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter your email address"
+          />
+          <button class="button2">SUBSCRIBE</button>
+        </div>
+      </div>
+    </section>
+    <!-- NEWSLETTER -->
   </body>
   <!-- slider -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="js/slider.js"></script> -->
 
   <!-- slider -->
+  <!-- loader -->
+  <script src="js/loader.js"></script>
 </html>

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --slider-height: 80vh;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button1 {
+  padding: 15px 21px;
+  border-radius: 5px;
+  background-color: #d4d4d4;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #b28d57;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+.button2 {
+  padding: 15px 21px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #373635;
+  border: 1px solid #373635;
+  transition: all 0.3s ease;
+}
+.button3 {
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #d8d8d8;
+}
+
+
+
+/* loader */
+.loader {
+    position: fixed;
+    z-index: 99999999999999999999999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 300px;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.thumb {
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+/* loader */

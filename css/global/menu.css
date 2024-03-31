@@ -1,0 +1,40 @@
+menu .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 999;
+}
+menu{
+    background-color: #F3F3F3;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+menu .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+
+menu .logo img {
+    width: 45px;
+    height: 45px;
+}
+menu .logo p.logo_text {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+
+
+menu nav {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
