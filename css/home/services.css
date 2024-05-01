@@ -59,3 +59,14 @@ p.services_container_item_title {
     margin: auto;
     display: block;
 }
+
+
+@media screen and (max-width: 879px) {
+    
+    .services_container{
+       flex-direction: column;
+    }
+    .services_container_item{
+        width: 100%;
+    }
+}

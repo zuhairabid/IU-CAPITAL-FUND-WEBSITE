@@ -47,6 +47,7 @@ img.about_graphics {
 
 .about_content {
     width: 700px;
+    margin-right: 7rem;
 }
 
 img.about_office {
@@ -118,4 +119,45 @@ p.about_title {
 p.about_sub {
     color: #918f8c;
 }
+
+
+
+@media screen and (max-width: 1549px) {
+    .about_photo{
+        transform: scale(0.8);
+    }
+}
+@media screen and (max-width: 1169px) {
+    .about_photo{
+        transform: scale(0.6);
+    }
+    .about_content{
+        margin-right: 2rem;
+    }
+}
+@media screen and (max-width: 919px) {
+    .about{
+        flex-direction: column;
+    }
+    .about_content{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        margin: 0;
+        /* margin-bottom: 5rem; */
+    }
+    .about_content .title_span{
+        justify-content: center;
+    }
+    .about {
+        margin-bottom: 0
+        ;
+    }
+}
+
+
+/*  */
+
+
+
 

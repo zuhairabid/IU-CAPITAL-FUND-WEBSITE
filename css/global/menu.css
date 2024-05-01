@@ -38,3 +38,46 @@ menu nav {
     font-weight: 600;
     text-transform: uppercase;
 }
+
+.mobile_menu {
+    display: none;
+}
+/* @media screen and (max-width: 1426px) {
+
+   menu nav{
+    font-size: 14px;
+    flex-grow: 1;
+    margin-left: 45px;
+   }
+   menu .container{
+    
+    justify-content: flex-start;
+    
+}
+} */
+
+@media screen and (max-width: 1271px) {
+
+    menu nav{
+     display: none;
+    }
+    menu .container{
+    
+        justify-content: space-between;
+        
+    }
+    menu .mobile_menu{
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        display: absolute;
+    }
+    menu .container{
+        padding: 10px;
+    }
+    menu .logo  {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+ }

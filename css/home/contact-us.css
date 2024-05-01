@@ -62,3 +62,30 @@ p.contact_content_text {
     padding: 0px 35px;
     width: 700px;
 }
+
+@media screen and (max-width: 823px) {
+    div.contact_content{
+        width: 100%;
+    }
+    p.contact_sub {
+        width: 100%;
+    }
+    p.contact_content_text {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 679px) {
+    div.contact_content{
+        width: 100%;
+    }
+    p.contact_sub {
+        width: 100%;
+    }
+    p.contact_content_text {
+        width: 100%;
+        padding: 0;
+    }
+    div.contact_content{
+        position: static;
+    }
+}

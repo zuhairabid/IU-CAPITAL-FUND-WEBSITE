@@ -39,3 +39,18 @@ p.newsletter_subtitle {
 section.newsletter {
     margin: 10rem 0;
 }
+
+@media screen and (max-width: 593px) {
+     p.newsletter_subtitle{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 721px) {
+    .newsletter_form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .newsletter_form input{
+        width: 100%;
+    }
+}

@@ -31,7 +31,7 @@ img {
     width: 90px;
 }
 
-p {}
+
 
 .testimonial_item_header p {
     font-weight: 600;
@@ -39,7 +39,7 @@ p {}
 }
 
 .testimonial_item {
-    width: 400px;
+    width: 30%;
     border: 1px solid #b8b8b8;
     padding: 50px 34px;
     display: flex;
@@ -93,4 +93,21 @@ section.testimonial {
     display: block;
     margin: auto;
     margin-top: 61px;
+}
+
+
+@media screen and (max-width: 1262px) {
+    .tetsimonial_container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .testimonial_item{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 603px) {
+    p.testimonial_sub {
+        width: 100%;
+    }
 }
