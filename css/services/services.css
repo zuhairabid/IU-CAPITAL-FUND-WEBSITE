@@ -99,6 +99,46 @@ p.product_item_title {
     width: 100%;
 }
 
+
+/* AROW ANIMATION */
+
+.down_arrow {
+    position: relative;
+    width: 50px; /* adjust according to your design */
+    height: 50px; /* adjust according to your design */
+  }
+
+
+  .arrow_down {
+    position: relative;
+    width: 50px; /* adjust according to your design */
+    height: 50px; /* adjust according to your design */
+  }
+  
+  .arrow {
+ margin-top: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px; /* adjust according to your design */
+    color: white; /* adjust according to your design */
+    animation: arrowAnimation 1s infinite alternate; /* adjust animation duration and timing */
+  }
+  
+  @keyframes arrowAnimation {
+    0% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) translateY(10px); /* adjust the distance the arrow moves */
+    }
+  }
+  
+
+/* AROW ANIMATION */
+
+
 @media screen and (max-width: 821px) {
     
     .product_items{
@@ -109,5 +149,12 @@ p.product_item_title {
     
     .product_items{
         grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 987px) {
+    section.banner .banner_content p{
+        width: 80%;
+        font-size: 20px;
     }
 }
