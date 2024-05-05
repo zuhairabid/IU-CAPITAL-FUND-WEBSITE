@@ -26,25 +26,6 @@ section.hero .container {
     width: 100%;
 }
 
-.title_span span {
-    display: block;
-    width: 10px;
-    height: 2px;
-    background-color: black;
-}
-
-.title_span p {
-    /* font-size: 15px; */
-    font-weight: bold;
-    color: #B28D57;
-}
-
-.title_span {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
 p.hero_content_main {
     font-size: 51px;
     font-weight: 800;

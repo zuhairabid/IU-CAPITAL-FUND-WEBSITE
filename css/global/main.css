@@ -9,6 +9,28 @@
   border: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* design scroll bar */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  /* background-image: url(https://i.imgur.com/8sjwZjH.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 a {
@@ -57,6 +79,27 @@ button {
     font-size: 18px;
     padding-bottom: 7px;
     border-bottom: 2px solid #d8d8d8;
+}
+
+
+
+.title_span span {
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: black;
+}
+
+.title_span p {
+  /* font-size: 15px; */
+  font-weight: bold;
+  color: #B28D57;
+}
+
+.title_span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 

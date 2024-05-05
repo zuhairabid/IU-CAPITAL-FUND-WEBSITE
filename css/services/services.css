@@ -106,10 +106,11 @@ p.product_item_title {
     position: relative;
     width: 50px; /* adjust according to your design */
     height: 50px; /* adjust according to your design */
+    cursor: pointer;
   }
 
 
-  .arrow_down {
+  .arrow {
     position: relative;
     width: 50px; /* adjust according to your design */
     height: 50px; /* adjust according to your design */
