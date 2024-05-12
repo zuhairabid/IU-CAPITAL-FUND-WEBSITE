@@ -198,7 +198,7 @@ z-index: 2;
 
 /* loader */
 .loader {
-    position: absolute;
+    position: fixed;
     z-index: 99999999999999999999999999;
     top: 0;
     left: 0;
