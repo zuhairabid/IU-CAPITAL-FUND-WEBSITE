@@ -45,28 +45,49 @@
       <img src="/assets/global/loader/loader.gif" alt="Loading..." />
     </div>
     <!-- loaderr -->
-    <!-- NAVBAR -->
+   <!-- NAVBAR -->
 
-    <menu>
-      <div class="container">
-        <div class="logo">
-          <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
-          <p class="logo_text">IU CAPITAL</p>
-        </div>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/services.html">Services</a>
-
-          <a href="/economic-calendar.html">Economic Calender</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="mobile_menu">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+   <menu>
+    <div class="container">
+      <a href="/" class="logo">
+      <div class="logo">
+        <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
+        <p class="logo_text">IU CAPITAL</p>
       </div>
-    </menu>
-    <!-- NAVBAR -->
+    </a>
+      <nav class="full_screen">
+        <a href="/">Home</a>
+        <a href="/services.html">Services</a>
+       
+        <a href="/economic-calendar.html">Economic Calender</a>
+        <a href="/about-us.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="mobile_menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    
+  </menu>
+  <nav class="mobile">
+
+    
+    <a href="/">Home</a>
+    <a href="/services.html">Services</a>
+   
+    <a href="/economic-calendar.html">Economic Calender</a>
+    <a href="/about-us.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <script>
+    const menu_bar_button = document.querySelector(".mobile_menu");
+   const menu_bar = document.querySelector("nav.mobile");
+    menu_bar_button.addEventListener("click", () => {
+      menu_bar.classList.toggle("menu_toggle");
+    });
+
+  </script>
+  <!-- NAVBAR -->
 
     <!-- BANNER SECTION -->
     <section class="banner">
@@ -75,33 +96,34 @@
           <div class="product_content">
             <div class="product_content"><img src="" alt="" /></div>
             <h1>PREMIUM SIGNAL PLAN</h1>
-            <p>
+            <p class="product_banner_description">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
               sit ullam quasi quos delectus, ipsa nisi, illo quis aliquam, nam
               suscipit. Eos rem, dolorem odio tenetur veniam in nam esse.
             </p>
             <div class="learn_more_container">
+              <p class="learn_more">Learn More</p>
               <div class="down_arrow">
                 <a href="#More-About-The-Product"
                   ><i class="fa-solid fa-angle-down arrow"></i
                 ></a>
               </div>
-              <p>Learn More</p>
             </div>
           </div>
           <div class="product_checkout">
-            <p class="product_checkout_title"></p>
-            <p class="product_checkout_subtitle"></p>
-            <select name="" id="">
-            
-              <option value="">1 PREMIUM SIGNAL PLAN </option>
-             
+            <p class="product_checkout_title">Schedule a Session</p>
+            <p class="product_checkout_subtitle">
+              Choose the session time that best suit your business goals and
+              needs.
+            </p>
+            <select id="product_checkout_select">
+            <!-- JAVASCRIPT SELECTED -->
             </select>
             <div class="product_checkout_amount">
-                <div class="discount"></div>
-                <div class="total"></div>
+              <div class="discount"><p>$149.00 USD</p></div>
+              <div class="total"><p>$ 99.00 USD</p></div>
             </div>
-            <div class="checkout_buttons"></div>
+            <div class="checkout_buttons button2">ADD TO CART</div>
           </div>
         </div>
       </div>
@@ -112,6 +134,55 @@
         loop
         src="/assets/services/service-banner-graphics.mp4"
       ></video>
+    </section>
+    <span id="More-About-The-Product"></span>
+    <section class="product_description">
+      <div class="container">
+       
+      <h1>About the service</h1>
+     
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus non
+        nunc, vel, odio. Duis tellus est risus id nec mi. Augue sed feugiat
+        pharetra imperdiet diam. Pharetra dictum blandit sed mi quis. Purus et
+        quam nam quis vitae elit quis pharetra lectus. Lectus in ut quis dis
+        tempus tempor, odio. Blandit quis diam aliquam nulla. Non nisl
+        suspendisse purus fermentum. Sit potenti elementum orci viverra
+        consectetur.
+      </p>
+      <h2>What results can I expect?</h2>
+      <ul>
+        <li>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+            maiores obcaecati amet quae maxime molestiae possimus dignissimos
+            laboriosam aperiam pariatur! Asperiores architecto, beatae natus
+            esse aspernatur aliquam commodi voluptas sed!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+            architecto magni rerum assumenda nostrum atque sequi fugiat
+            voluptatum nisi quidem inventore vel, dolores, modi accusamus quam
+            adipisci error asperiores unde!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed
+            distinctio aperiam natus autem delectus accusantium assumenda ea,
+            quaerat error cumque modi accusamus unde sunt ullam illo explicabo.
+            Rerum, voluptatibus!
+          </p>
+        </li>
+      </ul>
+      
+      <div class="product_description_image">
+        <img src="/assets/product/product_description_image.jpg" alt="" />
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eligendi blanditiis, cumque officia ipsum, nam cupiditate error atque fuga laborum a possimus? Architecto autem accusamus quam aliquid similique? Autem, sed!</p>
+    </div>
     </section>
     <!-- BANNER SECTION -->
     <!-- TradingView Widget BEGIN -->
@@ -155,7 +226,7 @@
     </div> -->
     <!-- TradingView Widget END -->
     <!--   SERVICES -->
-    <span id="More-About-The-Product"></span>
+ 
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -215,4 +286,45 @@
   <!-- slider -->
   <!-- loader -->
   <script src="/js/loader.js"></script>
+  <script>
+    var product_data =[ {
+      name: "1 Hour of Consultation",
+      discount: "149.00 USD",
+      price: "199.00 USD",
+    },
+    {
+      name: "2 Hour of Consultation",
+      discount: "249.00 USD",
+      price: "299.00 USD",
+    },
+    {
+      name: "3 Hour of Consultation",
+      discount: "349.00 USD",
+      price: "399.00 USD",
+    },
+  
+  ]
+  const product_select   = document.querySelector('#product_checkout_select')
+  product_data.forEach((product,i) => {
+    const option = document.createElement('option')
+    option.id = i
+    option.value = i
+    option.innerHTML = `<p>${product.name}</p>`
+    product_select.appendChild(option)
+  })
+
+  const product_select_option   = document.querySelector('#product_checkout_select option')
+  product_select.addEventListener('input', (e) => {
+   console.log(product_select.value);
+
+    const discount_price = document.querySelector('.product_checkout_amount .discount p')
+    const total_price = document.querySelector('.product_checkout_amount .total p')
+    discount_price.innerText = product_data[product_select.value].discount
+    total_price.innerText = product_data[product_select.value].price
+  })
+  const discount_price = document.querySelector('.product_checkout_amount .discount p')
+    const total_price = document.querySelector('.product_checkout_amount .total p')
+    discount_price.innerText = product_data[0].discount
+    total_price.innerText = product_data[0].price
+  </script>
 </html>

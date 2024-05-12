@@ -98,7 +98,12 @@ p.product_item_title {
     display: block;
     width: 100%;
 }
-
+.product_item .product_price{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 31px 0px;
+    
+}
 
 /* AROW ANIMATION */
 

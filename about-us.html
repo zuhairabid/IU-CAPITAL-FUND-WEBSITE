@@ -45,34 +45,126 @@
       <img src="/assets/global/loader/loader.gif" alt="Loading..." />
     </div>
     <!-- loaderr -->
-    <!-- NAVBAR -->
+ <!-- NAVBAR -->
 
-    <menu>
+ <menu>
+  <div class="container">
+    <a href="/" class="logo">
+    <div class="logo">
+      <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
+      <p class="logo_text">IU CAPITAL</p>
+    </div>
+  </a>
+    <nav class="full_screen">
+      <a href="/">Home</a>
+      <a href="/services.html">Services</a>
+     
+      <a href="/economic-calendar.html">Economic Calender</a>
+      <a href="/about-us.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile_menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+  
+</menu>
+<nav class="mobile">
+
+  
+  <a href="/">Home</a>
+  <a href="/services.html">Services</a>
+ 
+  <a href="/economic-calendar.html">Economic Calender</a>
+  <a href="/about-us.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<script>
+  const menu_bar_button = document.querySelector(".mobile_menu");
+ const menu_bar = document.querySelector("nav.mobile");
+  menu_bar_button.addEventListener("click", () => {
+    menu_bar.classList.toggle("menu_toggle");
+  });
+
+</script>
+<!-- NAVBAR -->
+
+    <!-- ABOUT TOP SECTION -->
+    <section class="about_us_main">
       <div class="container">
-        <div class="logo">
-          <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
-          <p class="logo_text">IU CAPITAL</p>
+        <div class="about_main_content">
+          <div class="title_span">
+            <span></span>
+            <p>ABOUT</p>
+          </div>
+          <h1>IU CAPITAL</h1>
+          <div class="about_main_description">
+            <p>
+              IU CAPITAL aims to help its clients to grow their businesses.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+              quibusdam corporis reprehenderit amet eaque facilis quasi tempora
+              pariatur facere, magnam molestiae! Repudiandae et ex in vitae hic
+              reiciendis molestias eius?
+            </p>
+          </div>
+          <div class="follow_social">
+            <p>FOLLOW IU CAPITAL</p>
+            <div class="footer1_social_logos">
+              <a href="https://www.facebook.com/IUCapital"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/iucapital"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/iucapital/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/company/iu-capital/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
         </div>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/services.html">Services</a>
-
-          <a href="/economic-calendar.html">Economic Calender</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="mobile_menu">
-          <i class="fa-solid fa-bars"></i>
+        <div class="about_main_photo">
+          <video autoplay muted loop src="/assets/about/IU CAPITAL.mp4"></video>
         </div>
       </div>
-    </menu>
-    <!-- NAVBAR -->
+    </section>
+    <!-- ABOUT TOP SECTION -->
+    <!-- ABOUT AUTHOR -->
+    <div class="about_author">
+      <div class="container">
+        <div class="about_author_titles">
+          <div class="title_span">
+            <span></span>
+            <p>ABOUT THE FOUNDER</p>
+          </div>
+          <h1>THE STORY OF MIKE EMMONS</h1>
+          <p>MY MISSION</p>
+          <div class="about_author_titles_image">
+            <img src="/assets//home/our-team/mike.jpg" alt="" />
+          </div>
+        </div>
 
- <!-- ABOUT TOP SECTION -->
- <section class="about-us-main">
-    
- </section>
- <!-- ABOUT TOP SECTION -->
+        <div class="about_author_content">
+          <p>
+            YOU KNOW I WAS WORKING IN CALL CENTER THEN REALIZED IT FEELS STUPID
+            TO WORK HERE . THEN Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Vero dolore deserunt tempora error in maiores
+            facilis quis commodi perferendis. Sint veniam, recusandae enim minus
+            sequi quod beatae voluptatum. Ipsam, sunt!
+          </p>
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis atque quos minima quibusdam id adipisci? Doloremque quas dolorem, omnis cupiditate mollitia nobis ipsum quia sed earum dolor? Ipsa, consectetur maiores!
+        maxime repudiandae incidunt excepturi laborum! Doloremque saepe eligendi ducimus fugiat.</p>
+       
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum odit laudantium deserunt possimus libero labore voluptate illo quam, tempore quidem sed. Cumque voluptates totam nisi accusamus dolorem molestias optio consectetur!</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum odit laudantium deserunt possimus libero labore voluptate illo quam, tempore quidem sed. Cumque voluptates totam nisi accusamus dolorem molestias optio consectetur!</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum odit laudantium deserunt possimus libero labore voluptate illo quam, tempore quidem sed. Cumque voluptates totam nisi accusamus dolorem molestias optio consectetur!</p>
+      </div>
+      </div>
+    </div>
+    <!-- ABOUT AUTHOR -->
 
     <!-- FOOTER -->
     <footer class="footer">

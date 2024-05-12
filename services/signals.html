@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME | IU CAPITAL</title>
+    <link rel="icon" type="image/png" href="/assets/global/IU CAPITAL FAVICON.png" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1//css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- icons -->
+    <link rel="stylesheet" href="/css/utils/trading-view-ticker.css" />
+    <link rel="stylesheet" href="/css/global/main.css" />
+    <link rel="stylesheet" href="/css/global/menu.css" />
+    <link rel="stylesheet" href="/css/home/contact-us.css" />
+    
+    <link rel="stylesheet" href="/css/global/footer.css" />
+    <link rel="stylesheet" href="/css/services/services.css">
+
+    <!-- slider -->
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    /> -->
+    <!-- slider -->
+  </head>
+  <body>
+    <!-- loaderr -->
+    <div class="loader">
+      <img src="/assets/global/loader/loader.gif" alt="Loading..." />
+    </div>
+    <!-- loaderr -->
+    <!-- NAVBAR -->
+
+    <menu>
+        <div class="container">
+          <div class="logo">
+            <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
+            <p class="logo_text">IU CAPITAL</p>
+          </div>
+          <nav>
+            <a href="/">Home</a>
+            <a href="/services.html">Services</a>
+           
+            <a href="/economic-calendar.html">Economic Calender</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="mobile_menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </menu>
+      <!-- NAVBAR -->
+  
+    <!-- BANNER SECTION -->
+    <section class="banner">
+        <div class="banner_content">
+            <h1>Services</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+        saepe, autem ducimus, exercitationem omnis beatae temporibus esse illo
+        deserunt hic obcaecati quia eos, dolore nisi consectetur. Vel officiis
+        quas iusto.
+       
+      
+      </p>
+      <div class="down_arrow">
+       <a href="#start"><i class="fa-solid fa-angle-down arrow"></i></a> 
+      </div>
+    </div>
+      <div class="video_overlay"></div>
+      <video autoplay muted loop  src="/assets/services/service-banner-graphics.mp4"></video>
+    </section>
+    <!-- BANNER SECTION -->
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async
+      >
+          {
+          "symbols": [
+            {
+              "proName": "FOREXCOM:SPXUSD",
+              "title": "S&P 500 Index"
+            },
+            {
+              "proName": "FOREXCOM:NSXUSD",
+              "title": "US 100 Cash CFD"
+            },
+            {
+              "proName": "FX_IDC:EURUSD",
+              "title": "EUR to USD"
+            },
+            {
+              "proName": "BITSTAMP:BTCUSD",
+              "title": "Bitcoin"
+            },
+            {
+              "proName": "BITSTAMP:ETHUSD",
+              "title": "Ethereum"
+            }
+          ],
+          "showSymbolLogo": true,
+          "isTransparent": true,
+          "displayMode": "regular",
+          "colorTheme": "light",
+          "locale": "en"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <!--   SERVICES -->
+    <span id="start"></span>
+    <section class="products">
+      <div class="container">
+        <div class="product_items">
+            
+            <!-- PRODUCT ITEM -->
+          <div class="product_item">
+           
+                <img src="/assets/home/service-section/service-bussiness.png" alt="" />
+                <p class="product_item_title">BUSSINESS EDUCATION</p>
+                <p class="product_item_content">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Temporibus praesentium ullam a libero sit! Sequi, quidem ea? Aut
+                  reiciendis dolor, obcaecati quo libero, similique omnis, officiis
+                  eius quis soluta fugit!
+                </p>
+                <p class="product_price">Starting at $100</p>
+                <button class="button1" onclick="window.location.href='/services/signals/premium-signal-plan.html'">Learn More</button>
+              
+          </div>
+          <!-- PRODUCT ITEM -->
+            <!-- PRODUCT ITEM -->
+          <div class="product_item">
+           
+                <img src="/assets/home/service-section/service-bussiness.png" alt="" />
+                <p class="product_item_title">BUSSINESS EDUCATION</p>
+                <p class="product_item_content">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Temporibus praesentium ullam a libero sit! Sequi, quidem ea? Aut
+                  reiciendis dolor, obcaecati quo libero, similique omnis, officiis
+                  eius quis soluta fugit!
+                </p>
+                <p class="product_price">Starting at $100</p>
+                <button class="button1" onclick="window.location.href='/services/signals/premium-signal-plan.html'">Learn More</button>
+              
+          </div>
+          <!-- PRODUCT ITEM -->
+           
+        </div>
+    </section>
+    <!--   SERVICES -->
+
+    <!-- CONTACT US -->
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact_content">
+          <img
+            src="/assets/home/contact-us-section/contact-bg.webp"
+            alt=""
+            class="contact_bg_image"
+          />
+          <p class="contact_title">GET IN TOUCH</p>
+          <p class="contact_sub">
+            Schedule a session and skyrocket your business today
+          </p>
+          <p class="contact_content_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi
+            cumque odio dolorem atque iure facere omnis sunt nemo aliquam ex
+            perspiciatis, voluptas reprehenderit, ullam corporis. Eos, ipsa ab.
+            Reprehenderit?
+          </p>
+          <button class="button1">CONTACT US</button>
+        </div>
+        <div class="contact_box"></div>
+      </div>
+    </section>
+    <!-- CONTACT US -->
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer_content container">
+        <div class="footer1">
+          <div class="footer1_logo">
+            <img src="/assets/global/IU CAPITAL LOGO.png" alt="" />
+            <p>IU CAPITAL</p>
+          </div>
+          <p>
+            IU CAPITAL is a private equity firm that helps traders shares the
+            skils we have acquired over the past 14 years of trading.
+          </p>
+          <div class="footer1_social_logos">
+            <a href="https://www.facebook.com/IUCapital"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://twitter.com/iucapital"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/iucapital/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/company/iu-capital/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer2">
+          <div class="footer_header">Pages</div>
+          <div class="footer_links">
+            <a href="/">Home</a>
+            <a href="#services">Services</a>
+            <a href="#education">Education</a>
+            <a href="/economic-calendar.html">Economic Calender</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer3">
+          <div class="footer_header">Helpful Pages</div>
+          <div class="footer_links">
+            <a href="/faq.html">FAQ</a>
+            <a href="/terms-and-conditions.html">Terms and Conditions</a>
+            <a href="/privacy-policy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+  </body>
+  <!-- slider -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="/js/slider.js"></script> -->
+
+  <!-- slider -->
+  <!-- loader -->
+  <script src="/js/loader.js"></script>
+</html>

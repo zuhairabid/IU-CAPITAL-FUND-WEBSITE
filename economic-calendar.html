@@ -39,28 +39,49 @@
       <img src="/assets/global/loader/loader.gif" alt="Loading..." />
     </div>
     <!-- loaderr -->
-    <!-- NAVBAR -->
+ <!-- NAVBAR -->
 
-    <menu>
-      <div class="container">
-        <div class="logo">
-          <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
-          <p class="logo_text">IU CAPITAL</p>
-        </div>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/services.html">Services</a>
-         
-          <a href="/economic-calendar.html">Economic Calender</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="mobile_menu">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-    </menu>
-    <!-- NAVBAR -->
+ <menu>
+  <div class="container">
+    <a href="/" class="logo">
+    <div class="logo">
+      <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
+      <p class="logo_text">IU CAPITAL</p>
+    </div>
+  </a>
+    <nav class="full_screen">
+      <a href="/">Home</a>
+      <a href="/services.html">Services</a>
+     
+      <a href="/economic-calendar.html">Economic Calender</a>
+      <a href="/about-us.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile_menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+  
+</menu>
+<nav class="mobile">
+
+  
+  <a href="/">Home</a>
+  <a href="/services.html">Services</a>
+ 
+  <a href="/economic-calendar.html">Economic Calender</a>
+  <a href="/about-us.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<script>
+  const menu_bar_button = document.querySelector(".mobile_menu");
+ const menu_bar = document.querySelector("nav.mobile");
+  menu_bar_button.addEventListener("click", () => {
+    menu_bar.classList.toggle("menu_toggle");
+  });
+
+</script>
+<!-- NAVBAR -->
 
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">

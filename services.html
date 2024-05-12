@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME | IU CAPITAL</title>
-    <link rel="icon" type="image/png" href="assets/global/IU CAPITAL FAVICON.png" />
+    <link rel="icon" type="image/png" href="/assets/global/IU CAPITAL FAVICON.png" />
     <!-- icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1//css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     <!-- icons -->
-    <link rel="stylesheet" href="css/utils/trading-view-ticker.css" />
-    <link rel="stylesheet" href="css/global/main.css" />
-    <link rel="stylesheet" href="css/global/menu.css" />
-    <link rel="stylesheet" href="css/home/contact-us.css" />
+    <link rel="stylesheet" href="/css/utils/trading-view-ticker.css" />
+    <link rel="stylesheet" href="/css/global/main.css" />
+    <link rel="stylesheet" href="/css/global/menu.css" />
+    <link rel="stylesheet" href="/css/home/contact-us.css" />
     
-    <link rel="stylesheet" href="css/global/footer.css" />
-    <link rel="stylesheet" href="css/services/services.css">
+    <link rel="stylesheet" href="/css/global/footer.css" />
+    <link rel="stylesheet" href="/css/services/services.css">
 
     <!-- slider -->
     <!-- <link
@@ -38,31 +38,52 @@
   <body>
     <!-- loaderr -->
     <div class="loader">
-      <img src="assets/global/loader/loader.gif" alt="Loading..." />
+      <img src="/assets/global/loader/loader.gif" alt="Loading..." />
     </div>
     <!-- loaderr -->
-    <!-- NAVBAR -->
+ <!-- NAVBAR -->
 
-    <menu>
-        <div class="container">
-          <div class="logo">
-            <img src="assets/global/IU CAPITAL FAVICON.png" alt="" />
-            <p class="logo_text">IU CAPITAL</p>
-          </div>
-          <nav>
-            <a href="/">Home</a>
-            <a href="/services.html">Services</a>
-           
-            <a href="/economic-calendar.html">Economic Calender</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-          </nav>
-          <div class="mobile_menu">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </div>
-      </menu>
-      <!-- NAVBAR -->
+ <menu>
+  <div class="container">
+    <a href="/" class="logo">
+    <div class="logo">
+      <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
+      <p class="logo_text">IU CAPITAL</p>
+    </div>
+  </a>
+    <nav class="full_screen">
+      <a href="/">Home</a>
+      <a href="/services.html">Services</a>
+     
+      <a href="/economic-calendar.html">Economic Calender</a>
+      <a href="/about-us.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile_menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+  
+</menu>
+<nav class="mobile">
+
+  
+  <a href="/">Home</a>
+  <a href="/services.html">Services</a>
+ 
+  <a href="/economic-calendar.html">Economic Calender</a>
+  <a href="/about-us.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<script>
+  const menu_bar_button = document.querySelector(".mobile_menu");
+ const menu_bar = document.querySelector("nav.mobile");
+  menu_bar_button.addEventListener("click", () => {
+    menu_bar.classList.toggle("menu_toggle");
+  });
+
+</script>
+<!-- NAVBAR -->
   
     <!-- BANNER SECTION -->
     <section class="banner">
@@ -81,7 +102,7 @@
       </div>
     </div>
       <div class="video_overlay"></div>
-      <video autoplay muted loop  src="assets/services/service-banner-graphics.mp4"></video>
+      <video autoplay muted loop  src="/assets/services/service-banner-graphics.mp4"></video>
     </section>
     <!-- BANNER SECTION -->
     <!-- TradingView Widget BEGIN -->
@@ -133,63 +154,36 @@
             <!-- PRODUCT ITEM -->
           <div class="product_item">
            
-                <img src="assets/home/service-section/service-bussiness.png" alt="" />
-                <p class="product_item_title">BUSSINESS EDUCATION</p>
+                <img src="/assets/home/service-section/service-bussiness.png" alt="" />
+                <p class="product_item_title">CONSULTATION</p>
                 <p class="product_item_content">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Temporibus praesentium ullam a libero sit! Sequi, quidem ea? Aut
                   reiciendis dolor, obcaecati quo libero, similique omnis, officiis
                   eius quis soluta fugit!
                 </p>
-                <button class="button1">Learn More</button>
+                <p class="product_price">Starting at $100</p>
+               <button class="button1" onclick="window.location.href='/services/consultation.html'">Learn More</button>
               
           </div>
           <!-- PRODUCT ITEM -->
             <!-- PRODUCT ITEM -->
           <div class="product_item">
            
-                <img src="assets/home/service-section/service-bussiness.png" alt="" />
-                <p class="product_item_title">BUSSINESS EDUCATION</p>
+                <img src="/assets/home/service-section/service-bussiness.png" alt="" />
+                <p class="product_item_title">TRADING BOT SIGNALS</p>
                 <p class="product_item_content">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Temporibus praesentium ullam a libero sit! Sequi, quidem ea? Aut
                   reiciendis dolor, obcaecati quo libero, similique omnis, officiis
                   eius quis soluta fugit!
                 </p>
+                <p class="product_price">Starting at $100</p>
                 <button class="button1">Learn More</button>
               
           </div>
           <!-- PRODUCT ITEM -->
-            <!-- PRODUCT ITEM -->
-          <div class="product_item">
            
-                <img src="assets/home/service-section/service-bussiness.png" alt="" />
-                <p class="product_item_title">BUSSINESS EDUCATION</p>
-                <p class="product_item_content">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Temporibus praesentium ullam a libero sit! Sequi, quidem ea? Aut
-                  reiciendis dolor, obcaecati quo libero, similique omnis, officiis
-                  eius quis soluta fugit!
-                </p>
-                <button class="button1">Learn More</button>
-              
-          </div>
-          <!-- PRODUCT ITEM -->
-            <!-- PRODUCT ITEM -->
-          <div class="product_item">
-           
-                <img src="assets/home/service-section/service-bussiness.png" alt="" />
-                <p class="product_item_title">BUSSINESS EDUCATION</p>
-                <p class="product_item_content">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Temporibus praesentium ullam a libero sit! Sequi, quidem ea? Aut
-                  reiciendis dolor, obcaecati quo libero, similique omnis, officiis
-                  eius quis soluta fugit!
-                </p>
-                <button class="button1">Learn More</button>
-              
-          </div>
-          <!-- PRODUCT ITEM -->
         </div>
     </section>
     <!--   SERVICES -->
@@ -200,7 +194,7 @@
       <div class="container">
         <div class="contact_content">
           <img
-            src="assets/home/contact-us-section/contact-bg.webp"
+            src="/assets/home/contact-us-section/contact-bg.webp"
             alt=""
             class="contact_bg_image"
           />
@@ -227,7 +221,7 @@
       <div class="footer_content container">
         <div class="footer1">
           <div class="footer1_logo">
-            <img src="assets/global/IU CAPITAL LOGO.png" alt="" />
+            <img src="/assets/global/IU CAPITAL LOGO.png" alt="" />
             <p>IU CAPITAL</p>
           </div>
           <p>
@@ -275,9 +269,9 @@
   <!-- slider -->
   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script src="js/slider.js"></script> -->
+  <script src="/js/slider.js"></script> -->
 
   <!-- slider -->
   <!-- loader -->
-  <script src="js/loader.js"></script>
+  <script src="/js/loader.js"></script>
 </html>
