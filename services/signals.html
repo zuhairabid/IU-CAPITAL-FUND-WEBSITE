@@ -41,33 +41,54 @@
       <img src="/assets/global/loader/loader.gif" alt="Loading..." />
     </div>
     <!-- loaderr -->
-    <!-- NAVBAR -->
+ <!-- NAVBAR -->
 
-    <menu>
-        <div class="container">
-          <div class="logo">
-            <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
-            <p class="logo_text">IU CAPITAL</p>
-          </div>
-          <nav>
-            <a href="/">Home</a>
-            <a href="/services.html">Services</a>
-           
-            <a href="/economic-calendar.html">Economic Calender</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-          </nav>
-          <div class="mobile_menu">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </div>
-      </menu>
-      <!-- NAVBAR -->
+ <menu>
+  <div class="container">
+    <a href="/" class="logo">
+    <div class="logo">
+      <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
+      <p class="logo_text">IU CAPITAL</p>
+    </div>
+  </a>
+    <nav class="full_screen">
+      <a href="/">Home</a>
+      <a href="/services.html">Services</a>
+     
+      <a href="/economic-calendar.html">Economic Calender</a>
+      <a href="/about-us.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile_menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+  
+</menu>
+<nav class="mobile">
+
+  
+  <a href="/">Home</a>
+  <a href="/services.html">Services</a>
+ 
+  <a href="/economic-calendar.html">Economic Calender</a>
+  <a href="/about-us.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<script>
+  const menu_bar_button = document.querySelector(".mobile_menu");
+ const menu_bar = document.querySelector("nav.mobile");
+  menu_bar_button.addEventListener("click", () => {
+    menu_bar.classList.toggle("menu_toggle");
+  });
+
+</script>
+<!-- NAVBAR -->
   
     <!-- BANNER SECTION -->
     <section class="banner">
         <div class="banner_content">
-            <h1>Services</h1>
+            <h1>SIGNALS</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
         saepe, autem ducimus, exercitationem omnis beatae temporibus esse illo
@@ -134,15 +155,21 @@
           <div class="product_item">
            
                 <img src="/assets/home/service-section/service-bussiness.png" alt="" />
-                <p class="product_item_title">BUSSINESS EDUCATION</p>
+                <p class="product_item_title">FREE SIGNAL CHANNEL</p>
                 <p class="product_item_content">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Temporibus praesentium ullam a libero sit! Sequi, quidem ea? Aut
                   reiciendis dolor, obcaecati quo libero, similique omnis, officiis
                   eius quis soluta fugit!
                 </p>
-                <p class="product_price">Starting at $100</p>
-                <button class="button1" onclick="window.location.href='/services/signals/premium-signal-plan.html'">Learn More</button>
+                <p class="product_price">Starting at $0</p>
+                <!-- BUTTON 1 -->
+         <div class="button1" style="width: 100%;">
+          <button  onclick="window.location.href='/services/signals/signals-free-plan.html'" >LEARN MORE</button>
+          <span ></span>
+         
+        </div>
+          <!-- BUTTON 1 -->
               
           </div>
           <!-- PRODUCT ITEM -->
@@ -150,18 +177,26 @@
           <div class="product_item">
            
                 <img src="/assets/home/service-section/service-bussiness.png" alt="" />
-                <p class="product_item_title">BUSSINESS EDUCATION</p>
+                <p class="product_item_title">PREMIUM SIGNAL CHANNEL</p>
                 <p class="product_item_content">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Temporibus praesentium ullam a libero sit! Sequi, quidem ea? Aut
                   reiciendis dolor, obcaecati quo libero, similique omnis, officiis
                   eius quis soluta fugit!
                 </p>
-                <p class="product_price">Starting at $100</p>
-                <button class="button1" onclick="window.location.href='/services/signals/premium-signal-plan.html'">Learn More</button>
+                <p class="product_price">Starting at $20</p>
+                <!-- BUTTON 1 -->
+         <div class="button1" style="width: 100%;">
+          <button  onclick="window.location.href='/services/signals/premium-signal-plan.html'">LEARN MORE</button>
+          <span ></span>
+         
+        </div>
+          <!-- BUTTON 1 -->
               
           </div>
           <!-- PRODUCT ITEM -->
+          <!-- PRODUCT ITEM -->
+        
            
         </div>
     </section>
@@ -187,7 +222,13 @@
             perspiciatis, voluptas reprehenderit, ullam corporis. Eos, ipsa ab.
             Reprehenderit?
           </p>
-          <button class="button1">CONTACT US</button>
+          <!-- BUTTON 3 -->
+          <div class="button1" style="width: 200px;margin: auto;">
+            <button onclick="window.location.href='/contact.html'">CONTACT US</button>
+            <span ></span>
+           
+          </div>
+            <!-- BUTTON 3 -->
         </div>
         <div class="contact_box"></div>
       </div>

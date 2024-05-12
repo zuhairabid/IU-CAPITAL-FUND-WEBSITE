@@ -53,6 +53,7 @@ section.banner .banner_content {
 section.banner .banner_content h1 {
   font-size: 3.5rem;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 section.banner .banner_content .learn_more,
@@ -127,6 +128,7 @@ section.banner .banner_content .learn_more,
 select,
 option {
   font-size: 22px;
+  overflow: hidden;
 }
 
 select {
@@ -135,6 +137,8 @@ select {
  background-color: white;
   display: flex;
   align-items: center;
+  overflow: hidden;
+  width: 100%;
 }
 select:focus {
   outline: none;

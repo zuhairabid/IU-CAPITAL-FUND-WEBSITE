@@ -45,49 +45,45 @@
       <img src="/assets/global/loader/loader.gif" alt="Loading..." />
     </div>
     <!-- loaderr -->
-  <!-- NAVBAR -->
+    <!-- NAVBAR -->
 
-  <menu>
-    <div class="container">
-      <a href="/" class="logo">
-      <div class="logo">
-        <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
-        <p class="logo_text">IU CAPITAL</p>
+    <menu>
+      <div class="container">
+        <a href="/" class="logo">
+          <div class="logo">
+            <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
+            <p class="logo_text">IU CAPITAL</p>
+          </div>
+        </a>
+        <nav class="full_screen">
+          <a href="/">Home</a>
+          <a href="/services.html">Services</a>
+
+          <a href="/economic-calendar.html">Economic Calender</a>
+          <a href="/about-us.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="mobile_menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-    </a>
-      <nav class="full_screen">
-        <a href="/">Home</a>
-        <a href="/services.html">Services</a>
-       
-        <a href="/economic-calendar.html">Economic Calender</a>
-        <a href="/about-us.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div class="mobile_menu">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-    
-  </menu>
-  <nav class="mobile">
+    </menu>
+    <nav class="mobile">
+      <a href="/">Home</a>
+      <a href="/services.html">Services</a>
 
-    
-    <a href="/">Home</a>
-    <a href="/services.html">Services</a>
-   
-    <a href="/economic-calendar.html">Economic Calender</a>
-    <a href="/about-us.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <script>
-    const menu_bar_button = document.querySelector(".mobile_menu");
-   const menu_bar = document.querySelector("nav.mobile");
-    menu_bar_button.addEventListener("click", () => {
-      menu_bar.classList.toggle("menu_toggle");
-    });
-
-  </script>
-  <!-- NAVBAR -->
+      <a href="/economic-calendar.html">Economic Calender</a>
+      <a href="/about-us.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <script>
+      const menu_bar_button = document.querySelector(".mobile_menu")
+      const menu_bar = document.querySelector("nav.mobile")
+      menu_bar_button.addEventListener("click", () => {
+        menu_bar.classList.toggle("menu_toggle")
+      })
+    </script>
+    <!-- NAVBAR -->
 
     <!-- CONTACT US -->
     <section class="contact_us_main">
@@ -113,52 +109,103 @@
               placeholder="What's your Message?"
             ></textarea>
           </div>
-          <button class="button3">Send</button>
+          <!-- BUTTON 2 -->
+          <div class="button2" style="margin-top: 20px;background-color: transparent;">
+            <button onclick="window.location.href='/services.html'">SEND</button>
+            <span ></span>
+           
+          </div>
+            <!-- BUTTON 2 -->
         </div>
 
         <div class="contact_card">
-          <div class="contact_card_img"><img src="/assets/contact/dotgraphics.png" alt="" /></div>
+          <div class="contact_card_img">
+            <img src="/assets/contact/dotgraphics.png" alt="" />
+          </div>
           <div class="contact_card_box">
             <div class="contact_card_box_item">
               <div class="title_span">
                 <span></span>
                 <p>Email</p>
               </div>
-              <p>5BqyT@example.com</p>
+              <p>iucapitalconsult@gmail.com</p>
             </div>
             <div class="contact_card_box_item">
               <div class="title_span">
                 <span></span>
                 <p>Phone / Whatsapp</p>
               </div>
-              <p>(598) - 404 - 1789</p>
+              <p>863-286-6521</p>
+            </div>
+            <div class="contact_card_box_item">
+              <div class="title_span">
+                <span></span>
+                <p>Address</p>
+              </div>
+              <p>7901 4TH ST N STE 300 ST. PETERSBURG, FL 33702</p>
             </div>
             <div class="contact_card_box_item">
               <div class="title_span">
                 <span></span>
                 <p>SOCIAL MEDIA</p>
               </div>
-                <div class="footer1_social_logos">
-                  <a href="https://www.facebook.com/IUCapital"
-                    ><i class="fa-brands fa-facebook"></i
-                  ></a>
-                  <a href="https://twitter.com/iucapital"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                  <a href="https://www.instagram.com/iucapital/"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                  <a href="https://www.linkedin.com/company/iu-capital/"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
-                </div>
-              
+              <div class="footer1_social_logos">
+                <a href="https://www.facebook.com/IUCapital"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://twitter.com/iucapital"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://www.instagram.com/iucapital/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.linkedin.com/company/iu-capital/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- CONTACT US -->
+    <!-- MAP -->
+    <div class="mapouter" >
+      <div class="gmap_canvas">
+        <iframe
+          class="gmap_iframe"
+          width="100%"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=7901 4th st ste 300 st. pete&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe
+        ><a href="https://embed-googlemap.com">google maps embed</a>
+      </div>
+      <style>
+        .mapouter {
+          position: relative;
+          text-align: right;
+          max-width: 100%;
+          margin: auto;
+          width: 100%;
+          height: 550px;
+          border-top: 1px solid black;
+          border-bottom: 1px solid white;
+        }
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          width: 100%;
+          height: 550px;
+        }
+        .gmap_iframe {
+          height: 550px !important;
+        }
+      </style>
+    </div>
+    <!-- MAP -->
     <!-- FAQ -->
     <!-- FAQ -->
 
