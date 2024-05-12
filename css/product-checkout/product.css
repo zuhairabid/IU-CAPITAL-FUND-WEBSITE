@@ -239,7 +239,7 @@ select:focus {
     gap: 50px;
   }
   .product_content{
-    margin-top: 14rem;
+    margin-top: 17rem;
     width: 100%;
   }
   .product_checkout {
@@ -259,6 +259,13 @@ select:focus {
 }
 
 @media screen and (max-width: 513px) {
+  section.banner .banner_content h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .product_banner_description{
+    font-size:20px
+  }
   .product_checkout {
     width: 100%;
   }
