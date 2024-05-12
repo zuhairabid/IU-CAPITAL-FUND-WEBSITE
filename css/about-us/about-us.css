@@ -211,6 +211,9 @@ div.about_author_titles_image img{
     div.about_author .container> div{
         margin: 2rem 0;
     }
+    div.about_author .container h1{
+        text-align: center;
+    }
     div.about_author .container> div{
         width: 100%;
         padding: 0 1rem;
