@@ -233,3 +233,9 @@ div.about_author_titles_image img{
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 499px) {
+    div.about_main_photo{
+        bottom: -7rem;
+    }
+}
