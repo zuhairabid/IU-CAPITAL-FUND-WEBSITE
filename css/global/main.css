@@ -55,35 +55,123 @@ button {
   margin: 0 auto;
   padding: 0 45px;
 }
-
-.button1 {
+/* BUTTON 1 */
+.button1{
+  position: relative;
+  background-color: #b28d57;
+  text-align: center;
+}
+.button1 button {
+  position: relative;
   padding: 15px 21px;
   border-radius: 5px;
-
   font-size: 18px;
   font-weight: 600;
-  background-color: #b28d57;
   cursor: pointer;
   color: white;
   transition: all 0.3s ease;
+  z-index: 3;
+  text-align: center;
 }
-.button2 {
+.button1 span{
+position: absolute;
+display: block;
+bottom: 0;
+width: 0%;
+height: 100%;
+background-color: white;
+transition: width 0.3s ease;
+z-index: 2;
+
+}
+.button1:hover span,.button1:hover button{
+  width: 100%;
+  color: black;
+
+  
+}
+.button1:hover span{
+  border: 1px solid black;
+}
+/* BUTTON 1 */
+/* BUTTON 2 */
+.button2{
+  position: relative;
+  background-color: white;
+  text-align: center;
+  border: 1px solid black;
+}
+.button2 button {
+  position: relative;
   padding: 15px 21px;
   border-radius: 5px;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-  color: #373635;
-  border: 1px solid #373635;
+  color: black;
   transition: all 0.3s ease;
+  z-index: 3;
+  text-align: center;
 }
-.button3 {
-    margin-top: 25px;
-    font-weight: 700;
-    font-size: 18px;
-    padding-bottom: 7px;
-    border-bottom: 2px solid #d8d8d8;
+.button2 span{
+position: absolute;
+display: block;
+bottom: 0;
+width: 0%;
+height: 100%;
+background-color: black;
+transition: width 0.3s ease;
+z-index: 2;
+
 }
+.button2:hover span,.button2:hover button{
+  width: 100%;
+  color: white;
+
+  
+}
+.button2:hover span{
+  border: 1px solid black;
+}
+/* BUTTON 2 */
+
+/* BUTTON 3 */
+.button3{
+  margin: 25px 0px;
+  position: relative;
+}
+
+.button3 button{
+  
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 7px;
+  /* border-bottom: 2px solid #d8d8d8; */
+ 
+  
+}
+.button3 .span1{
+  /* position: absolute; */
+  display: block;
+  /* bottom: 0; */
+  width: 100%;
+  height: 3px;
+  background-color: gray;
+}
+.button3 .span2{
+  
+   position: absolute;
+   display: block;
+   bottom: 0;
+   width: 0%;
+   height: 3px;
+   background-color: black;
+   transition: all 0.3s ease;
+}
+.button3:hover .span2{
+  width: 100%;
+}
+/* BUTTON 3 */
 
 
 
