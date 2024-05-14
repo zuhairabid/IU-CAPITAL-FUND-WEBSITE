@@ -1,173 +1,335 @@
-section.banner{
+section.banner {
     position: relative;
-        height: 30rem;
+    height: 30rem;
+  }
+  
+  section.banner video {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  section.banner .video_overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.789);
+    /* z-index: -1; */
+  }
+  
+  section.banner .banner_content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  section.banner .banner_content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+  }
+  
+  section.banner .banner_content p {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+  
+  /* PRODUCTSSS */
+  .product_items {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px;
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .product_item {
+    border-radius: 20px;
+    padding: 20px 10px;
+  
+    height: 482px;
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    justify-content: center;
+  
+    align-items: flex-start;
+  
+    margin-bottom: 61px;
+    transition: all 0.3s ease;
+  }
+  
+  .product_item:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  p.product_item_title {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 31px 0px;
+    height: 55px;
+  }
+  
+  .products .container > button {
+    margin-top: 80px;
+    display: flex;
+    margin: auto;
+  }
+  .products .container > button {
+    margin: auto;
+    display: block;
+  }
+  
+  .products .container button {
+    margin: auto;
+    display: block;
+    width: 100%;
+  }
+  .product_item .product_price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 31px 0px;
+  }
+  
+  /* AROW ANIMATION */
+  
+  .down_arrow {
+    position: relative;
+    width: 50px; /* adjust according to your design */
+    height: 50px; /* adjust according to your design */
+    cursor: pointer;
+  }
+  
+  .arrow {
+    position: relative;
+    width: 50px; /* adjust according to your design */
+    height: 50px; /* adjust according to your design */
+  }
+  
+  .arrow {
+    margin-top: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px; /* adjust according to your design */
+    color: white; /* adjust according to your design */
+    animation: arrowAnimation 1s infinite alternate; /* adjust animation duration and timing */
+  }
+  
+  @keyframes arrowAnimation {
+    0% {
+      transform: translate(-50%, -50%) translateY(0);
     }
-    
-    
-    section.banner video{
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        z-index: -1;
+    100% {
+      transform: translate(-50%, -50%) translateY(10px); /* adjust the distance the arrow moves */
     }
-    
-    section.banner .video_overlay{
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.789);
-        /* z-index: -1; */
+  }
+  
+  /* AROW ANIMATION */
+  
+  @media screen and (max-width: 821px) {
+    .product_items {
+      grid-template-columns: 45% 45%;
     }
-    
-    section.banner .banner_content{
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-        z-index: 1;
+  }
+  @media screen and (max-width: 523px) {
+    .product_items {
+      grid-template-columns: 100%;
     }
-    
-    section.banner .banner_content h1{
-        font-size: 3.5rem;
-        margin-bottom: 50px;
+  }
+  
+  @media screen and (max-width: 987px) {
+    section.banner .banner_content p {
+      width: 80%;
+      font-size: 20px;
     }
-    
-    section.banner .banner_content p{
-        font-size: 1.5rem;
-        width: 50%;
+  }
+  section.banner {
+    position: relative;
+    height: 30rem;
+  }
+  
+  section.banner video {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  section.banner .video_overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.789);
+    /* z-index: -1; */
+  }
+  
+  section.banner .banner_content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  section.banner .banner_content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+  }
+  
+  section.banner .banner_content p {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+  
+  /* PRODUCTSSS */
+  .product_items {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px;
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .product_item {
+    border-radius: 20px;
+    padding: 20px 10px;
+  
+    height: 482px;
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    justify-content: center;
+  
+    align-items: flex-start;
+  
+    margin-bottom: 61px;
+    transition: all 0.3s ease;
+  }
+  
+  .product_item:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  
+  p.product_item_title {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 31px 0px;
+    height: 55px;
+  }
+  
+  .products .container > button {
+    margin-top: 80px;
+    display: flex;
+    margin: auto;
+  }
+  .products .container > button {
+    margin: auto;
+    display: block;
+  }
+  
+  .products .container button {
+    margin: auto;
+    display: block;
+    width: 100%;
+  }
+  .product_item .product_price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 31px 0px;
+  }
+  
+  /* AROW ANIMATION */
+  
+  .down_arrow {
+    position: relative;
+    width: 50px; /* adjust according to your design */
+    height: 50px; /* adjust according to your design */
+    cursor: pointer;
+  }
+  
+  .arrow {
+    position: relative;
+    width: 50px; /* adjust according to your design */
+    height: 50px; /* adjust according to your design */
+  }
+  
+  .arrow {
+    margin-top: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px; /* adjust according to your design */
+    color: white; /* adjust according to your design */
+    animation: arrowAnimation 1s infinite alternate; /* adjust animation duration and timing */
+  }
+  
+  @keyframes arrowAnimation {
+    0% {
+      transform: translate(-50%, -50%) translateY(0);
     }
-    
-    /* PRODUCTSSS */
-    .product_items{
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-        padding: 30px 0px;
-        margin: auto;
-        width: 100%;
-        max-width: 1400px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    
+    100% {
+      transform: translate(-50%, -50%) translateY(10px); /* adjust the distance the arrow moves */
     }
-    
-    .product_item {
-     
-/* padding: 3px 0px; */
-     
-height: 482px;
-     
-display: flex;
-     
-flex-direction: column;
-     
-justify-content: center;
-     
-align-items: flex-start;
-     
-margin-bottom: 61px;
+  }
+  
+  /* AROW ANIMATION */
+  
+  @media screen and (max-width: 821px) {
+    .product_items {
+      grid-template-columns: 45% 45%;
     }
-    
-    
-    
-    p.product_item_title {
-        font-size: 27px;
-        font-weight: bold;
-        margin: 31px 0px;
-        height: 55px;
+  }
+  @media screen and (max-width: 523px) {
+    .product_items {
+      grid-template-columns: 100%;
     }
-    
-    
-    
-    .products .container> button {
-        margin-top: 80px;
-        display: flex;
-        margin: auto;
+  }
+  
+  @media screen and (max-width: 987px) {
+    section.banner .banner_content p {
+      width: 80%;
+      font-size: 20px;
     }
-    .products .container >  button {
-        margin: auto;
-        display: block;
-    }
+  }
     
-    .products .container  button {
-        margin: auto;
-        display: block;
-        width: 100%;
-    }
-    .product_item .product_price{
-        font-size: 20px;
-        font-weight: bold;
-        margin: 31px 0px;
-        
-    }
-    
-    /* AROW ANIMATION */
-    
-    .down_arrow {
-        position: relative;
-        width: 50px; /* adjust according to your design */
-        height: 50px; /* adjust according to your design */
-        cursor: pointer;
-      }
-    
-    
-      .arrow {
-        position: relative;
-        width: 50px; /* adjust according to your design */
-        height: 50px; /* adjust according to your design */
-      }
-      
-      .arrow {
-     margin-top: 30px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 50px; /* adjust according to your design */
-        color: white; /* adjust according to your design */
-        animation: arrowAnimation 1s infinite alternate; /* adjust animation duration and timing */
-      }
-      
-      @keyframes arrowAnimation {
-        0% {
-          transform: translate(-50%, -50%) translateY(0);
-        }
-        100% {
-          transform: translate(-50%, -50%) translateY(10px); /* adjust the distance the arrow moves */
-        }
-      }
-      
-    
-    /* AROW ANIMATION */
-    
-    
-    @media screen and (max-width: 821px) {
-        
-        .product_items{
-            grid-template-columns: 45% 45%;
-        }
-    }
-    @media screen and (max-width: 523px) {
-        
-        .product_items{
-            grid-template-columns: 100%;
-        }
-    }
-    
-    @media screen and (max-width: 987px) {
-        section.banner .banner_content p{
-            width: 80%;
-            font-size: 20px;
-        }
-    }
