@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ADVANCED CONSULTATION | IU CAPITAL</title>
+    <title>ADVANCED CONSULTATION SERVICE | IU CAPITAL</title>
+    <meta
+      name="description"
+      content="Unlock the power of precision trading with our Advanced
+Consultation – where seasoned traders harness data-driven
+strategies for unparalleled success!"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -45,49 +51,45 @@
       <img src="/assets/global/loader/loader.gif" alt="Loading..." />
     </div>
     <!-- loaderr -->
-   <!-- NAVBAR -->
+    <!-- NAVBAR -->
 
-   <menu>
-    <div class="container">
-      <a href="/" class="logo">
-      <div class="logo">
-        <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
-        <p class="logo_text">IU CAPITAL</p>
+    <menu>
+      <div class="container">
+        <a href="/" class="logo">
+          <div class="logo">
+            <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
+            <p class="logo_text">IU CAPITAL</p>
+          </div>
+        </a>
+        <nav class="full_screen">
+          <a href="/">Home</a>
+          <a href="/services.html">Services</a>
+
+          <a href="/economic-calendar.html">Economic Calender</a>
+          <a href="/about-us.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="mobile_menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-    </a>
-      <nav class="full_screen">
-        <a href="/">Home</a>
-        <a href="/services.html">Services</a>
-       
-        <a href="/economic-calendar.html">Economic Calender</a>
-        <a href="/about-us.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div class="mobile_menu">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-    
-  </menu>
-  <nav class="mobile">
+    </menu>
+    <nav class="mobile">
+      <a href="/">Home</a>
+      <a href="/services.html">Services</a>
 
-    
-    <a href="/">Home</a>
-    <a href="/services.html">Services</a>
-   
-    <a href="/economic-calendar.html">Economic Calender</a>
-    <a href="/about-us.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <script>
-    const menu_bar_button = document.querySelector(".mobile_menu");
-   const menu_bar = document.querySelector("nav.mobile");
-    menu_bar_button.addEventListener("click", () => {
-      menu_bar.classList.toggle("menu_toggle");
-    });
-
-  </script>
-  <!-- NAVBAR -->
+      <a href="/economic-calendar.html">Economic Calender</a>
+      <a href="/about-us.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <script>
+      const menu_bar_button = document.querySelector(".mobile_menu")
+      const menu_bar = document.querySelector("nav.mobile")
+      menu_bar_button.addEventListener("click", () => {
+        menu_bar.classList.toggle("menu_toggle")
+      })
+    </script>
+    <!-- NAVBAR -->
 
     <!-- BANNER SECTION -->
     <section class="banner">
@@ -97,12 +99,11 @@
             <div class="product_content"><img src="" alt="" /></div>
             <h1>CONSULTATION FOR ADVANCED</h1>
             <p class="product_banner_description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-              sit ullam quasi quos delectus, ipsa nisi, illo quis aliquam, nam
-              suscipit. Eos rem, dolorem odio tenetur veniam in nam esse.
+              Unlock the power of precision trading with our Advanced
+              Consultation – where seasoned traders harness data-driven
+              strategies for unparalleled success!
             </p>
             <div class="learn_more_container">
-              
               <div class="down_arrow">
                 <a href="#More-About-The-Product"
                   ><i class="fa-solid fa-angle-down arrow"></i
@@ -113,31 +114,29 @@
           <div class="product_checkout">
             <p class="product_checkout_title">Book a Session</p>
             <p class="product_checkout_subtitle">
-              Choose the best session depending on your needs. Confused? Get started with the 1 Hour Plan.
+              Choose the best session depending on your needs. Confused? Get
+              started with the 1 Hour Plan.
             </p>
             <select id="product_checkout_select">
-            <!-- JAVASCRIPT SELECTED -->
+              <!-- JAVASCRIPT SELECTED -->
             </select>
             <div class="product_checkout_amount">
               <div class="discount"><p>$149.00 USD</p></div>
               <div class="total"><p>$ 99.00 USD</p></div>
             </div>
             <div class="checkout_buttons">
-              
-                <!-- BUTTON 1 -->
-         <div class="button2" style="margin-bottom: 20px;">
-          <button >PAY WITH CRYPTO</button>
-          <span ></span>
-         
-        </div>
-          <!-- BUTTON 1 -->
-            <!-- BUTTON 1 -->
-         <div class="button1" >
-          <button >PAY WITH STRIPE</button>
-          <span ></span>
-         
-        </div>
-          <!-- BUTTON 1 -->
+              <!-- BUTTON 1 -->
+              <!-- <div class="button2" style="margin-bottom: 20px">
+                <button onclick="crypto_button_link()">PAY WITH CRYPTO</button>
+                <span></span>
+              </div> -->
+              <!-- BUTTON 1 -->
+              <!-- BUTTON 1 -->
+              <div class="button1">
+                <button onclick="stripe_button_link()">PAY WITH STRIPE</button>
+                <span></span>
+              </div>
+              <!-- BUTTON 1 -->
             </div>
           </div>
         </div>
@@ -153,51 +152,73 @@
     <span id="More-About-The-Product"></span>
     <section class="product_description">
       <div class="container">
-       
-      <h1>About the service</h1>
-     
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus non
-        nunc, vel, odio. Duis tellus est risus id nec mi. Augue sed feugiat
-        pharetra imperdiet diam. Pharetra dictum blandit sed mi quis. Purus et
-        quam nam quis vitae elit quis pharetra lectus. Lectus in ut quis dis
-        tempus tempor, odio. Blandit quis diam aliquam nulla. Non nisl
-        suspendisse purus fermentum. Sit potenti elementum orci viverra
-        consectetur.
-      </p>
-      <h2>What results can I expect?</h2>
-      <ul>
-        <li>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
-            maiores obcaecati amet quae maxime molestiae possimus dignissimos
-            laboriosam aperiam pariatur! Asperiores architecto, beatae natus
-            esse aspernatur aliquam commodi voluptas sed!
-          </p>
-        </li>
-        <li>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-            architecto magni rerum assumenda nostrum atque sequi fugiat
-            voluptatum nisi quidem inventore vel, dolores, modi accusamus quam
-            adipisci error asperiores unde!
-          </p>
-        </li>
-        <li>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed
-            distinctio aperiam natus autem delectus accusantium assumenda ea,
-            quaerat error cumque modi accusamus unde sunt ullam illo explicabo.
-            Rerum, voluptatibus!
-          </p>
-        </li>
-      </ul>
-      
-      <div class="product_description_image">
-        <img src="/assets/product/product_description_image.jpg" alt="" />
+        <h1>About the service</h1>
+
+        <p>
+          Refine your trading expertise with our exclusive package crafted for
+          advanced traders seeking profitability. If you have trading experience
+          but struggle to achieve consistent gains, our comprehensive approach
+          will assess your trading plan and psychology. We ensure your
+          personality aligns with your trading style, conduct live backtesting
+          to enhance confidence, and outline future strategies. Enjoy ongoing
+          support via chat, providing access to expert guidance whenever you
+          need it. Let us help elevate your trading success and propel you
+          towards sustained profitability. Unlock your full trading potential
+          with us today
+        </p>
+        <h2>What results can I expect?</h2>
+        <ul>
+          <li>
+            <p>
+              Quantitative Analysis Skills: Gain proficiency in advanced
+              quantitative analysis methods and tools for precise market
+              forecasting and strategy optimization.
+            </p>
+          </li>
+          <li>
+            <p>
+              Algorithmic Trading: Learn to design and implement algorithmic
+              trading strategies, leveraging automation for enhanced efficiency
+              and scalability.
+            </p>
+          </li>
+          <li>
+            <p>
+              Portfolio Diversification Strategies: Explore sophisticated
+              portfolio management techniques to diversify risk and maximize
+              long-term profitability.
+            </p>
+          </li>
+          <li>
+            <p>
+              Networking Opportunities: Connect with other advanced traders and
+              industry professionals for insights, collaborations, and potential
+              opportunities.
+            </p>
+          </li>
+          <li>
+            <p>
+              Continuous Learning: Access to exclusive resources, workshops, and
+              updates to stay ahead of evolving market trends and strategies.
+            </p>
+          </li>
+        </ul>
+
+        <div class="product_description_image">
+          <img src="/assets/product/product_description_image.jpg" alt="" />
+        </div>
+        <h2>How to book consultation ?</h2>
+        <p>
+          Go to the Top of the
+          <u
+            ><b><a href="#join_now">Checkout section</a></b>
+          </u>
+          , select the duration of session that suits your needs. Then
+          <b>Pay with Stripe</b> that will direct you to stripe payment page.
+          You will get an email to schedule the session . Get 24/1
+          <u><a href="/contact.html">IU CAPITAL SUPPORT.</a></u>
+        </p>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eligendi blanditiis, cumque officia ipsum, nam cupiditate error atque fuga laborum a possimus? Architecto autem accusamus quam aliquid similique? Autem, sed!</p>
-    </div>
     </section>
     <!-- BANNER SECTION -->
     <!-- TradingView Widget BEGIN -->
@@ -241,7 +262,6 @@
     </div> -->
     <!-- TradingView Widget END -->
     <!--   SERVICES -->
- 
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -256,16 +276,14 @@
             skils we have acquired over the past 14 years of trading.
           </p>
           <div class="footer1_social_logos">
-            <a href="https://www.facebook.com/IUCapital"
+            <a href="https://www.facebook.com/profile.php?id=61551454222998"
               ><i class="fa-brands fa-facebook"></i
             ></a>
-            <a href="https://twitter.com/iucapital"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://www.instagram.com/iucapital/"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="https://www.linkedin.com/company/iu-capital/"
+            <a href="https://www.linkedin.com/company/iu-capital-llc"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
           </div>
@@ -302,45 +320,75 @@
   <!-- loader -->
   <script src="/js/loader.js"></script>
   <script>
-  
-  var product_data =[ {
-      name: "1 Hour Advanced Consultation",
-      discount: "100.00 USD",
-      price: "55.00 USD",
-    },
-    {
-      name: "2 Hour Advanced Consultation",
-      discount: "200.00 USD",
-      price: "110.00 USD",
-    },
-    {
-      name: "3 Hour Advanced Consultation",
-      discount: "300.00 USD",
-      price: "160.00 USD",
-    },
-  
-  ]
-  const product_select   = document.querySelector('#product_checkout_select')
-  product_data.forEach((product,i) => {
-    const option = document.createElement('option')
-    option.id = i
-    option.value = i
-    option.innerHTML = `<p>${product.name}</p>`
-    product_select.appendChild(option)
-  })
+    var product_data = [
+      {
+        name: "1 Hour Advanced Consultation",
+        discount: "100.00 USD",
+        price: "55.00 USD",
+        stripe_link: "https://yahoo.com",
+        crypto_link: "https://starbase.com",
+      },
+      {
+        name: "2 Hour Advanced Consultation",
+        discount: "200.00 USD",
+        price: "110.00 USD",
+        stripe_link: "https://google.com",
+        crypto_link: "https://starbase.com",
+      },
+      {
+        name: "3 Hour Advanced Consultation",
+        discount: "300.00 USD",
+        price: "160.00 USD",
+        stripe_link: "https://youtube.com",
+        crypto_link: "https://starbase.com",
+      },
+    ]
 
-  const product_select_option   = document.querySelector('#product_checkout_select option')
-  product_select.addEventListener('input', (e) => {
-   console.log(product_select.value);
+    let stripe_button_link
 
-    const discount_price = document.querySelector('.product_checkout_amount .discount p')
-    const total_price = document.querySelector('.product_checkout_amount .total p')
-    discount_price.innerText = product_data[product_select.value].discount
-    total_price.innerText = product_data[product_select.value].price
-  })
-  const discount_price = document.querySelector('.product_checkout_amount .discount p')
-    const total_price = document.querySelector('.product_checkout_amount .total p')
+    let crypto_button_link
+
+    const product_select = document.querySelector("#product_checkout_select")
+    product_data.forEach((product, i) => {
+      const option = document.createElement("option")
+      option.id = i
+      option.value = i
+      option.innerHTML = `<p>${product.name}</p>`
+      product_select.appendChild(option)
+    })
+
+    const product_select_option = document.querySelector(
+      "#product_checkout_select option"
+    )
+    product_select.addEventListener("input", (e) => {
+      console.log(product_select.value)
+
+      const discount_price = document.querySelector(
+        ".product_checkout_amount .discount p"
+      )
+      const total_price = document.querySelector(
+        ".product_checkout_amount .total p"
+      )
+      discount_price.innerText = product_data[product_select.value].discount
+      total_price.innerText = product_data[product_select.value].price
+
+      stripe_button_link = () =>
+        (window.location.href = product_data[product_select.value].stripe_link)
+
+      crypto_button_link = () =>
+        (window.location.href = product_data[product_select.value].crypto_link)
+    })
+    const discount_price = document.querySelector(
+      ".product_checkout_amount .discount p"
+    )
+    const total_price = document.querySelector(
+      ".product_checkout_amount .total p"
+    )
     discount_price.innerText = product_data[0].discount
     total_price.innerText = product_data[0].price
+    stripe_button_link = () =>
+      (window.location.href = product_data[0].stripe_link)
+    crypto_button_link = () =>
+      (window.location.href = product_data[0].crypto_link)
   </script>
 </html>

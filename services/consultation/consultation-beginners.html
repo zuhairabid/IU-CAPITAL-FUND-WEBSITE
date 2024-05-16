@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BEGINNERS CONSULTATION | IU CAPITAL</title>
+    <title>BEGINNERS CONSULTATION SERVICE| IU CAPITAL</title>
+    <meta
+      name="description"
+      content="Let your Trading journey begin with our Beginners package - this
+    is where trading novices become confident strategists !!"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -45,49 +50,45 @@
       <img src="/assets/global/loader/loader.gif" alt="Loading..." />
     </div>
     <!-- loaderr -->
-   <!-- NAVBAR -->
+    <!-- NAVBAR -->
 
-   <menu>
-    <div class="container">
-      <a href="/" class="logo">
-      <div class="logo">
-        <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
-        <p class="logo_text">IU CAPITAL</p>
+    <menu>
+      <div class="container">
+        <a href="/" class="logo">
+          <div class="logo">
+            <img src="/assets/global/IU CAPITAL FAVICON.png" alt="" />
+            <p class="logo_text">IU CAPITAL</p>
+          </div>
+        </a>
+        <nav class="full_screen">
+          <a href="/">Home</a>
+          <a href="/services.html">Services</a>
+
+          <a href="/economic-calendar.html">Economic Calender</a>
+          <a href="/about-us.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="mobile_menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-    </a>
-      <nav class="full_screen">
-        <a href="/">Home</a>
-        <a href="/services.html">Services</a>
-       
-        <a href="/economic-calendar.html">Economic Calender</a>
-        <a href="/about-us.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div class="mobile_menu">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-    
-  </menu>
-  <nav class="mobile">
+    </menu>
+    <nav class="mobile">
+      <a href="/">Home</a>
+      <a href="/services.html">Services</a>
 
-    
-    <a href="/">Home</a>
-    <a href="/services.html">Services</a>
-   
-    <a href="/economic-calendar.html">Economic Calender</a>
-    <a href="/about-us.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <script>
-    const menu_bar_button = document.querySelector(".mobile_menu");
-   const menu_bar = document.querySelector("nav.mobile");
-    menu_bar_button.addEventListener("click", () => {
-      menu_bar.classList.toggle("menu_toggle");
-    });
-
-  </script>
-  <!-- NAVBAR -->
+      <a href="/economic-calendar.html">Economic Calender</a>
+      <a href="/about-us.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <script>
+      const menu_bar_button = document.querySelector(".mobile_menu")
+      const menu_bar = document.querySelector("nav.mobile")
+      menu_bar_button.addEventListener("click", () => {
+        menu_bar.classList.toggle("menu_toggle")
+      })
+    </script>
+    <!-- NAVBAR -->
 
     <!-- BANNER SECTION -->
     <section class="banner">
@@ -97,12 +98,10 @@
             <div class="product_content"><img src="" alt="" /></div>
             <h1>CONSULTATION FOR BEGINNERS</h1>
             <p class="product_banner_description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-              sit ullam quasi quos delectus, ipsa nisi, illo quis aliquam, nam
-              suscipit. Eos rem, dolorem odio tenetur veniam in nam esse.
+              Let your Trading journey begin with our Beginners package - this
+              is where trading novices become confident strategists !!
             </p>
             <div class="learn_more_container">
-              
               <div class="down_arrow">
                 <a href="#More-About-The-Product"
                   ><i class="fa-solid fa-angle-down arrow"></i
@@ -113,31 +112,29 @@
           <div class="product_checkout">
             <p class="product_checkout_title">Book a Session</p>
             <p class="product_checkout_subtitle">
-              Choose the best session depending on your needs. Confused? Get started with the 1 Hour Plan.
+              Choose the best session depending on your needs. Confused? Get
+              started with the 1 Hour Plan.
             </p>
             <select id="product_checkout_select">
-            <!-- JAVASCRIPT SELECTED -->
+              <!-- JAVASCRIPT SELECTED -->
             </select>
             <div class="product_checkout_amount">
               <div class="discount"><p>$149.00 USD</p></div>
               <div class="total"><p>$ 99.00 USD</p></div>
             </div>
             <div class="checkout_buttons">
-              
-                <!-- BUTTON 1 -->
-         <div class="button2" style="margin-bottom: 20px;">
-          <button >PAY WITH CRYPTO</button>
-          <span ></span>
-         
-        </div>
-          <!-- BUTTON 1 -->
-            <!-- BUTTON 1 -->
-         <div class="button1" >
-          <button onclick="window.location.href=stripe_button_link">PAY WITH STRIPE</button>
-          <span ></span>
-         
-        </div>
-          <!-- BUTTON 1 -->
+              <!-- BUTTON 1 -->
+              <!-- <div class="button2" style="margin-bottom: 20px">
+                <button onclick="crypto_button_link()">PAY WITH CRYPTO</button>
+                <span></span>
+              </div> -->
+              <!-- BUTTON 1 -->
+              <!-- BUTTON 1 -->
+              <div class="button1">
+                <button onclick="stripe_button_link()">PAY WITH STRIPE</button>
+                <span></span>
+              </div>
+              <!-- BUTTON 1 -->
             </div>
           </div>
         </div>
@@ -153,51 +150,69 @@
     <span id="More-About-The-Product"></span>
     <section class="product_description">
       <div class="container">
-       
-      <h1>About the service</h1>
-     
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus non
-        nunc, vel, odio. Duis tellus est risus id nec mi. Augue sed feugiat
-        pharetra imperdiet diam. Pharetra dictum blandit sed mi quis. Purus et
-        quam nam quis vitae elit quis pharetra lectus. Lectus in ut quis dis
-        tempus tempor, odio. Blandit quis diam aliquam nulla. Non nisl
-        suspendisse purus fermentum. Sit potenti elementum orci viverra
-        consectetur.
-      </p>
-      <h2>What results can I expect?</h2>
-      <ul>
-        <li>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
-            maiores obcaecati amet quae maxime molestiae possimus dignissimos
-            laboriosam aperiam pariatur! Asperiores architecto, beatae natus
-            esse aspernatur aliquam commodi voluptas sed!
-          </p>
-        </li>
-        <li>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-            architecto magni rerum assumenda nostrum atque sequi fugiat
-            voluptatum nisi quidem inventore vel, dolores, modi accusamus quam
-            adipisci error asperiores unde!
-          </p>
-        </li>
-        <li>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed
-            distinctio aperiam natus autem delectus accusantium assumenda ea,
-            quaerat error cumque modi accusamus unde sunt ullam illo explicabo.
-            Rerum, voluptatibus!
-          </p>
-        </li>
-      </ul>
-      
-      <div class="product_description_image">
-        <img src="/assets/product/product_description_image.jpg" alt="" />
+        <h1>About the service</h1>
+
+        <p>
+          Discover the essentials of day trading with our beginner-friendly
+          package. Perfect for those new to trading, this comprehensive offering
+          covers the basics: from getting started and selecting the right
+          platforms and brokers, to avoiding scams and finding reliable
+          resources. Gain confidence and knowledge as you embark on your day
+          trading journey with our expert guidance and free study materials.
+          Start your path to successful day trading today!
+        </p>
+        <h2>What results can I expect?</h2>
+        <ul>
+          <li>
+            <p>
+              Understanding Basics: Clients will grasp fundamental concepts
+              crucial for day trading, such as market mechanics, order types,
+              and risk management.
+            </p>
+          </li>
+          <li>
+            <p>
+              Building Strategies: Learn to develop basic trading strategies
+              suited for beginners, focusing on simplicity and low-risk setups.
+            </p>
+          </li>
+          <li>
+            <p>
+              Practice Sessions: Engage in simulated trading sessions to apply
+              newly acquired knowledge and gain confidence without risking real
+              capital.
+            </p>
+          </li>
+          <li>
+            <p>
+              Support & Guidance: Receive ongoing support and guidance from
+              experienced mentors to navigate initial challenges and queries.
+            </p>
+          </li>
+          <li>
+            <p>
+              Goal Setting: Establish realistic trading goals and milestones
+              tailored to the individual's starting point and aspirations.
+            </p>
+          </li>
+        </ul>
+
+        <div class="product_description_image">
+          <img src="/assets/product/product_description_image.jpg" alt="" />
+        </div>
+
+        <h2>How to book consultation ?</h2>
+        <p>
+          Go to the Top of the
+          <u
+            ><b><a href="#join_now">Checkout section</a></b>
+          </u>
+          , select the duration of session that suits your needs. Then
+          <b>Pay with Stripe</b> that will direct you to stripe payment page.
+          You will get an email to schedule the session . Get 24/1
+          <u><a href="/contact.html">IU CAPITAL SUPPORT.</a></u>
+        </p>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eligendi blanditiis, cumque officia ipsum, nam cupiditate error atque fuga laborum a possimus? Architecto autem accusamus quam aliquid similique? Autem, sed!</p>
-    </div>
     </section>
     <!-- BANNER SECTION -->
     <!-- TradingView Widget BEGIN -->
@@ -241,7 +256,6 @@
     </div> -->
     <!-- TradingView Widget END -->
     <!--   SERVICES -->
- 
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -256,16 +270,14 @@
             skils we have acquired over the past 14 years of trading.
           </p>
           <div class="footer1_social_logos">
-            <a href="https://www.facebook.com/IUCapital"
+            <a href="https://www.facebook.com/profile.php?id=61551454222998"
               ><i class="fa-brands fa-facebook"></i
             ></a>
-            <a href="https://twitter.com/iucapital"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://www.instagram.com/iucapital/"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="https://www.linkedin.com/company/iu-capital/"
+            <a href="https://www.linkedin.com/company/iu-capital-llc"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
           </div>
@@ -302,56 +314,75 @@
   <!-- loader -->
   <script src="/js/loader.js"></script>
   <script>
-    var product_data =[ {
-      name: "1 Hour Beginner Consultation",
-      discount: "99.00 USD",
-      price: "50.00 USD",
-      stripe_link:"https://google.com"
-    },
-    {
-      name: "2 Hour Beginner Consultation",
-      discount: "199.00 USD",
-      price: "75.00 USD",
-      stripe_link:"https://yahoo.com"
-    },
-    {
-      name: "3 Hour Beginner Consultation",
-      discount: "299.00 USD",
-      price: "150.00 USD",
-      stripe_link:"https://yandex.com"
-    },
-    
-  
-  ]
+    var product_data = [
+      {
+        name: "1 Hour Beginner Consultation",
+        discount: "99.00 USD",
+        price: "50.00 USD",
+        stripe_link: "https://google.com",
+        crypto_link: "https://1.com",
+      },
+      {
+        name: "2 Hour Beginner Consultation",
+        discount: "199.00 USD",
+        price: "75.00 USD",
+        stripe_link: "https://yahoo.com",
+        crypto_link: "https://yahoo.com",
+      },
+      {
+        name: "3 Hour Beginner Consultation",
+        discount: "299.00 USD",
+        price: "150.00 USD",
+        stripe_link: "https://yandex.com",
+        crypto_link: "https://youtube.com",
+      },
+    ]
 
+    let stripe_button_link
 
-  let stripe_button_link;
+    let crypto_button_link
 
+    const product_select = document.querySelector("#product_checkout_select")
+    product_data.forEach((product, i) => {
+      const option = document.createElement("option")
+      option.id = i
+      option.value = i
+      option.innerHTML = `<p>${product.name}</p>`
+      product_select.appendChild(option)
+    })
 
-  const product_select   = document.querySelector('#product_checkout_select')
-  product_data.forEach((product,i) => {
-    const option = document.createElement('option')
-    option.id = i
-    option.value = i
-    option.innerHTML = `<p>${product.name}</p>`
-    product_select.appendChild(option)
-  })
-  
-  const product_select_option   = document.querySelector('#product_checkout_select option')
-  product_select.addEventListener('input', (e) => {
-   console.log(product_select.value);
+    const product_select_option = document.querySelector(
+      "#product_checkout_select option"
+    )
+    product_select.addEventListener("input", (e) => {
+      console.log(product_select.value)
 
-    const discount_price = document.querySelector('.product_checkout_amount .discount p')
-    const total_price = document.querySelector('.product_checkout_amount .total p')
-    discount_price.innerText = product_data[product_select.value].discount
-    total_price.innerText = product_data[product_select.value].price
+      const discount_price = document.querySelector(
+        ".product_checkout_amount .discount p"
+      )
+      const total_price = document.querySelector(
+        ".product_checkout_amount .total p"
+      )
+      discount_price.innerText = product_data[product_select.value].discount
+      total_price.innerText = product_data[product_select.value].price
 
-    stripe_button_link = product_data[product_select.value].stripe_link
-  })
-  const discount_price = document.querySelector('.product_checkout_amount .discount p')
-    const total_price = document.querySelector('.product_checkout_amount .total p')
+      stripe_button_link = () =>
+        (window.location.href = product_data[product_select.value].stripe_link)
+
+      crypto_button_link = () =>
+        (window.location.href = product_data[product_select.value].crypto_link)
+    })
+    const discount_price = document.querySelector(
+      ".product_checkout_amount .discount p"
+    )
+    const total_price = document.querySelector(
+      ".product_checkout_amount .total p"
+    )
     discount_price.innerText = product_data[0].discount
     total_price.innerText = product_data[0].price
-    stripe_button_link = product_data[0].stripe_link
+    stripe_button_link = () =>
+      (window.location.href = product_data[0].stripe_link)
+    crypto_button_link = () =>
+      (window.location.href = product_data[0].crypto_link)
   </script>
 </html>
