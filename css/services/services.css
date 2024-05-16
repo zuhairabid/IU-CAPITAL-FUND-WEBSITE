@@ -231,17 +231,11 @@ section.banner .banner_content p {
 .product_item {
   border-radius: 20px;
   padding: 20px 10px;
-
-  height: 482px;
-
+  height: 32.5rem;
   display: flex;
-
   flex-direction: column;
-
   justify-content: center;
-
   align-items: flex-start;
-
   margin-bottom: 61px;
   transition: all 0.3s ease;
 }
@@ -255,6 +249,13 @@ p.product_item_title {
   font-weight: bold;
   margin: 31px 0px;
   height: 55px;
+}
+
+.product_item_content{
+
+min-height: 125px;
+
+overflow: hidden;
 }
 
 .products .container > button {
