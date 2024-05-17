@@ -11,8 +11,8 @@
     />
     <link
       rel="icon"
-      type="image/png"
-      href="/assets/global/IU CAPITAL FAVICON.png"
+      type="image/webp"
+      href="/assets/global/IU CAPITAL FAVICON.webp"
     />
     <link rel="stylesheet" href="/css/utils/trading-view-ticker.css" />
     <link rel="stylesheet" href="/css/global/main.css" />
@@ -114,7 +114,7 @@
               Choose the best session depending on your needs. Confused? Get
               started with the 1 Hour Plan.
             </p>
-            <select id="product_checkout_select" >
+             <select id="product_checkout_select"  autocomplete="off">
               <!-- JAVASCRIPT SELECTED -->
             </select>
             <div class="product_checkout_amount">
@@ -376,9 +376,7 @@
     let crypto_button_link
 
     let  product_select = document.querySelector("#product_checkout_select")
-    const product_select_option = document.querySelector(
-      "#product_checkout_select option"
-    )
+   
 
     
     product_data.forEach((product, i) => {
@@ -428,6 +426,8 @@ const discount_price = document.querySelector(
       crypto_button_link = () =>
         (window.location.href = product_data[product_select.value].crypto_link)
     })
+
+   
 
 
   </script>
