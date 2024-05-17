@@ -50,8 +50,7 @@
       <img src="/assets/global/loader/loader.webp" alt="Loading..." />
     </div>
     <!-- loaderr -->
-    <!-- NAVBAR -->
-
+    
     <menu>
       <div class="container">
         <a href="/" class="logo">
@@ -115,7 +114,7 @@
               Choose the best session depending on your needs. Confused? Get
               started with the 1 Hour Plan.
             </p>
-            <select id="product_checkout_select">
+            <select id="product_checkout_select" >
               <!-- JAVASCRIPT SELECTED -->
             </select>
             <div class="product_checkout_amount">
@@ -257,7 +256,28 @@
     <!-- TradingView Widget END -->
     <!--   SERVICES -->
 
-    <!-- FOOTER -->
+  <!-- FOOTER -->
+    <!-- (A) HORIZONTAL TICKER -->
+    <div class="hwrap">
+      <div class="hmove">
+        <div class="hitem">
+          
+          <b>Disclaimer</b>: IU Capital LLC. does not make any guarantee or other promise as to any results that may be obtained from using our content. No one should make any investment decision without first consulting his or her own financial advisor and conducting his or her own research and due diligence. To the maximum extent permitted by law, IU Capital LLC disclaims any and all liability in the event any information, commentary, analysis, opinions, advice, and/or recommendations prove to be inaccurate, incomplete, or unreliable, or result in any investment or other losses.
+        </div>
+        <div class="hitem">
+          
+          <b>Disclaimer</b>: IU Capital LLC. does not make any guarantee or other promise as to any results that may be obtained from using our content. No one should make any investment decision without first consulting his or her own financial advisor and conducting his or her own research and due diligence. To the maximum extent permitted by law, IU Capital LLC disclaims any and all liability in the event any information, commentary, analysis, opinions, advice, and/or recommendations prove to be inaccurate, incomplete, or unreliable, or result in any investment or other losses.
+        </div>
+        <div class="hitem">
+          
+          <b>Disclaimer</b>: IU Capital LLC. does not make any guarantee or other promise as to any results that may be obtained from using our content. No one should make any investment decision without first consulting his or her own financial advisor and conducting his or her own research and due diligence. To the maximum extent permitted by law, IU Capital LLC disclaims any and all liability in the event any information, commentary, analysis, opinions, advice, and/or recommendations prove to be inaccurate, incomplete, or unreliable, or result in any investment or other losses.
+        </div>
+        <!-- <div class="hitem">Aliquam consequat varius consequat.</div>
+    <div class="hitem">Fusce dapibus turpis vel nisi malesuada sollicitudin.</div>
+    <div class="hitem">Pellentesque auctor molestie orci ut blandit.</div> -->
+      </div>
+    </div>
+    <!-- (A) HORIZONTAL TICKER -->
     <footer class="footer">
       <div class="footer_content container">
         <div class="footer1">
@@ -286,11 +306,11 @@
           <div class="footer_header">Pages</div>
           <div class="footer_links">
             <a href="/">Home</a>
-            <a href="#services">Services</a>
-            <a href="#education">Education</a>
+            <a href="/services.html">Services</a>
+            <!-- <a href="#education">Education</a> -->
             <a href="/economic-calendar.html">Economic Calender</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="/about-us.html">About</a>
+            <a href="/contact.html">Contact</a>
           </div>
         </div>
         <div class="footer3">
@@ -303,6 +323,19 @@
         </div>
       </div>
     </footer>
+    <div
+      style="
+        text-align: center;
+        color: white;
+        background-color: #5c421f;
+        border-top: 1px solid white;
+        padding: 10px 0px;
+      "
+    >
+      <div class="container">
+        <p>© 2022 IU CAPITAL</p>
+      </div>
+    </div>
     <!-- FOOTER -->
   </body>
   <!-- slider -->
@@ -319,21 +352,21 @@
         name: "1 Hour Beginner Consultation",
         discount: "99.00 USD",
         price: "50.00 USD",
-        stripe_link: "https://google.com",
+        stripe_link: "https://buy.stripe.com/00gcNo2txdro7WEfZh",
         crypto_link: "https://1.com",
       },
       {
         name: "2 Hour Beginner Consultation",
         discount: "199.00 USD",
         price: "75.00 USD",
-        stripe_link: "https://yahoo.com",
+        stripe_link: "https://buy.stripe.com/bIY28K4BF730dgYcN6",
         crypto_link: "https://yahoo.com",
       },
       {
         name: "3 Hour Beginner Consultation",
         discount: "299.00 USD",
         price: "150.00 USD",
-        stripe_link: "https://yandex.com",
+        stripe_link: "https://buy.stripe.com/14k3cO4BFbjg5OwcN7",
         crypto_link: "https://youtube.com",
       },
     ]
@@ -342,7 +375,12 @@
 
     let crypto_button_link
 
-    const product_select = document.querySelector("#product_checkout_select")
+    let  product_select = document.querySelector("#product_checkout_select")
+    const product_select_option = document.querySelector(
+      "#product_checkout_select option"
+    )
+
+    
     product_data.forEach((product, i) => {
       const option = document.createElement("option")
       option.id = i
@@ -351,9 +389,27 @@
       product_select.appendChild(option)
     })
 
-    const product_select_option = document.querySelector(
-      "#product_checkout_select option"
+
+
+    
+//  DEAFAULT VALUES
+ product_select = document.querySelector("#product_checkout_select")
+const discount_price = document.querySelector(
+      ".product_checkout_amount .discount p"
     )
+    const total_price = document.querySelector(
+      ".product_checkout_amount .total p"
+    )
+
+    discount_price.innerText = product_data[product_select.value].discount
+    total_price.innerText = product_data[product_select.value].price
+    stripe_button_link = () =>
+      (window.location.href = product_data[product_select.value].stripe_link)
+    crypto_button_link = () =>
+      (window.location.href = product_data[product_select.value].crypto_link)
+      // END DEAFAULT VALUES
+
+
     product_select.addEventListener("input", (e) => {
       console.log(product_select.value)
 
@@ -372,17 +428,7 @@
       crypto_button_link = () =>
         (window.location.href = product_data[product_select.value].crypto_link)
     })
-    const discount_price = document.querySelector(
-      ".product_checkout_amount .discount p"
-    )
-    const total_price = document.querySelector(
-      ".product_checkout_amount .total p"
-    )
-    discount_price.innerText = product_data[0].discount
-    total_price.innerText = product_data[0].price
-    stripe_button_link = () =>
-      (window.location.href = product_data[0].stripe_link)
-    crypto_button_link = () =>
-      (window.location.href = product_data[0].crypto_link)
+
+
   </script>
 </html>
